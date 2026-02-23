@@ -1,8 +1,8 @@
-﻿<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>Português (Brasil)</Name>
   <Code>PB</Code>
   <HelpPage>
-  <!--Traducao Marcelo 11/12/2025 versao 26682-->  
+  <!--Traducao Marcelo 22/02/2026 versao 26943-->  
 <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~
     |                 MASTER PAGES            |
@@ -196,7 +196,7 @@ Você pode testar os sons pressionando o botão de ativar em cada unidade de pas
 
 8: Experimente efeitos com o {THING:DeviceLfoVolume}.
 
-9: Finalmente, ative o sequenciador e vire um verdadeiro **Vibeoneer**!
+9: Finalmente, ative o sequenciador e vire um verdadeiro Vibeoneer!
       </Text>
     </StationpediaPage>
 
@@ -206,7 +206,7 @@ Você pode testar os sons pressionando o botão de ativar em cada unidade de pas
       <DisplayFilter>Guides</DisplayFilter>
 <Text>Para controlar a temperatura de um sistema, é preciso adicionar calor (aumentando a temperatura) ou remover calor (resfriando). Esse é o princípio básico do controle de temperatura. Os dispositivos que realizam essa função são o {THING:ItemWallHeater}, o {THING:ItemWallCooler}, o {THING:StructurePipeRadiator} e o {THING:StructureAirConditioner}.
 
-**OBSERVAÇÃO:** Existem muitos métodos diferentes de controle de temperatura — alguns nem utilizam os dispositivos mencionados aqui. Nesta seção, cobriremos apenas os fundamentos.
+OBSERVAÇÃO: Existem muitos métodos diferentes de controle de temperatura — alguns nem utilizam os dispositivos mencionados aqui. Nesta seção, cobriremos apenas os fundamentos.
 
 Antes de instalar qualquer tipo de controle de temperatura, é importante entender o ambiente em que você está trabalhando. O volume de gás ou líquido é um fator essencial na escolha do método de controle. Um {THING:StructureTankSmall} pode armazenar até 6.000 L, enquanto um {THING:StructureTankBig} comporta até 50.000 L. Isso significa que, estando ambos cheios, o tanque pequeno reagirá mais rapidamente às mudanças de temperatura. Uma sala também é um espaço que contém uma certa quantidade de gás — quanto maior o volume, mais lentamente reagirá às variações térmicas. Essas mesmas regras se aplicam tanto a tanques quanto a salas.
 
@@ -243,7 +243,7 @@ Se o resfriador estiver piscando um erro, ele pode estar com um dos seguintes pr
 {HEADER:AR-CONDICIONADO}
 O {THING:StructureAirConditioner}, em sua forma básica, funciona como o resfriador de parede, mas é mais potente. Ele resfria mais rapidamente e consome mais energia conforme a situação, sendo ideal para volumes e áreas maiores. Pode aquecer ou resfriar, dependendo da configuração.
 
-**AR-CONDICIONADO: COMO FUNCIONA**  
+AR-CONDICIONADO: COMO FUNCIONA  
 O ar-condicionado possui 3 conexões de tubulação (Entrada, Saída e Resíduo). O gás entra pela entrada e, conforme a configuração, o calor é adicionado ou removido, sendo transferido para a tubulação de resíduo. O gás sai pela conexão de saída, mais quente ou mais frio conforme o ajuste.
 Você pode conectar as tubulações de entrada e saída (elas terão o mesmo número de rede).  Isso dá mais controle sobre a temperatura, pois o gás não atinge o valor-alvo na primeira passagem — é necessário tempo e energia para ajustar o calor.
 
@@ -251,16 +251,16 @@ A instalação e configuração dependem do que você deseja aquecer ou resfriar
 
 O ar-condicionado não precisa estar dentro da sala; apenas a ventilação passiva deve estar, para que o ar circule entre a sala e o sistema. 
 
-Um único ar-condicionado pode ser usado tanto para aquecer quanto para resfriar — basta alterar a temperatura-alvo no painel. Porém, para automatizar os dois processos, será necessário usar **dois** aparelhos (um para aquecer e outro para resfriar), pois o ajuste de temperatura só pode ser feito manualmente.
+Um único ar-condicionado pode ser usado tanto para aquecer quanto para resfriar — basta alterar a temperatura-alvo no painel. Porém, para automatizar os dois processos, será necessário usar dois aparelhos (um para aquecer e outro para resfriar), pois o ajuste de temperatura só pode ser feito manualmente.
 
 Instalar mais de um ar-condicionado na mesma rede pode ser útil para acelerar o processo ou para usar alguns no aquecimento e outros no resfriamento. Conecte suas entradas e saídas à mesma rede de tubulação, compartilhando também a rede de resíduo — que, no entanto, deve ser separada da de entrada/saída. O mesmo conceito vale para controlar a temperatura de tanques, conectando-os diretamente ao ar-condicionado em vez de usar ventilação.
 
-**AR-CONDICIONADO: PONTOS IMPORTANTES**
+AR-CONDICIONADO: PONTOS IMPORTANTES
 - Quanto maior a diferença de temperatura entre a entrada e a tubulação de resíduo, mais energia o aparelho consumirá.  
 - O consumo pode ultrapassar 5 kW, portanto, recomenda-se o uso de cabos pesados.  
 - Conduzir a tubulação de resíduo para o exterior nem sempre é a melhor opção — o gás usado nela pode ser aproveitado em outra parte da base.
 
-**AR-CONDICIONADO: CONTROLE TÉRMICO DA BASE**
+AR-CONDICIONADO: CONTROLE TÉRMICO DA BASE
 Existem várias formas de controlar a temperatura da base com ar-condicionados; aqui está uma das mais simples:
 1. Instale uma única rede de tubulação ao redor da base e conecte ventilação passiva em cada sala que deseja controlar — essa será a “Rede A”.  
 2. Conecte a “Rede A” à entrada e à saída do ar-condicionado.  
@@ -576,6 +576,7 @@ Pressão de Fusão {0}</Text>
       <Text>{0}.{1}</Text>
     </StationpediaPage>
     
+	
     <StationpediaPage>
       <Key>ReagentPageTemplate</Key>
       <Text>O {LINK:ReagentPage;reagente}, frequentemente utilizável em sua forma de {LINK:IngotPage;Lingote}.
@@ -588,6 +589,7 @@ Pressão de Fusão {0}</Text>
     <StationpediaPage>
       <Key>GasPageTemplate</Key>
       <Text>O {LINK:GasPage;gás}, frequentemente produzido durante a {LINK:SmeltingPage;fundição}.
+
 
 {LIST}Calor Específico {1}{2}{/LIST}
 
@@ -634,13 +636,13 @@ Equipamentos hidropônicos comuns utilizados por Stationeers incluem:
 - {THING:ItemKitHydroponicStation}  
 - {THING:StructureHarvie}  
 
-Todos os sistemas hidropônicos requerem **água, luz solar e a mistura correta de gases** — as plantas necessitam de {GAS:CarbonDioxide} e produzem oxigênio (com exceção do {THING:ItemAlienMushroom}). As plantas **não crescerão** em uma atmosfera inadequada. Se não houver luz suficiente, será necessário construir uma {THING:StructureGrowLight}.
+Todos os sistemas hidropônicos requerem água, luz solar e a mistura correta de gases — as plantas necessitam de {GAS:CarbonDioxide} e produzem oxigênio (com exceção do {THING:ItemAlienMushroom}). As plantas não crescerão em uma atmosfera inadequada. Se não houver luz suficiente, será necessário construir uma {THING:StructureGrowLight}.
 
 O tipo de sistema que você utilizará dependerá dos recursos e do tempo disponíveis, mas um sistema agrícola bem projetado pode ser quase totalmente automatizado, desde que haja tempo e materiais suficientes.
 
 {HEADER:COLHEITA}
 
-A maioria das plantas possui várias fases de crescimento. Nas primeiras fases, a planta está apenas passando pelo seu ciclo de vida. Durante a **terceira fase**, é possível colher sementes da planta. Na **quarta fase**, ela começará a produzir frutos. Após isso, a planta morrerá — a menos que seja removida antes.
+A maioria das plantas possui várias fases de crescimento. Nas primeiras fases, a planta está apenas passando pelo seu ciclo de vida. Durante a **terceira fase**, é possível colher sementes da planta. Na quarta fase, ela começará a produzir frutos. Após isso, a planta morrerá — a menos que seja removida antes.
 
 {HEADER:FERTILIZANTE}
 
@@ -648,12 +650,12 @@ O fertilizante altera o processo de crescimento das plantas e é produzido utili
 
 Os efeitos do fertilizante dependem de seus ingredientes:
 
-- {LINK:OrganicPage;Alimentos} aumentam o **RENDIMENTO** individual da planta em até 3 unidades.  
-- {THING:DecayedFood} aumenta a **VELOCIDADE DE CRESCIMENTO** da planta em até 3 vezes.  
-- {THING:ItemBiomass} aumenta o **NÚMERO DE CICLOS DE CRESCIMENTO** pelos quais o fertilizante permanece ativo, até o máximo de 5.
+- {LINK:OrganicPage;Alimentos} aumentam o RENDIMENTO individual da planta em até 3 unidades.  
+- {THING:DecayedFood} aumenta a VELOCIDADE DE CRESCIMENTO da planta em até 3 vezes.  
+- {THING:ItemBiomass} aumenta o NÚMERO DE CICLOS DE CRESCIMENTO pelos quais o fertilizante permanece ativo, até o máximo de 5.
 
 
-O efeito de cada ingrediente depende das **proporções** utilizadas no composteiro no momento do processamento. O fertilizante é produzido em uma proporção de **1:3** (uma parte de fertilizante para três partes de ingredientes). Durante o processamento, são liberados {GAS:Nitrogen} e {GAS:Volatiles}, além de uma pequena quantidade de calor.
+O efeito de cada ingrediente depende das proporções utilizadas no composteiro no momento do processamento. O fertilizante é produzido em uma proporção de 1:3 (uma parte de fertilizante para três partes de ingredientes). Durante o processamento, são liberados {GAS:Nitrogen} e {GAS:Volatiles}, além de uma pequena quantidade de calor.
 	  </Text>
     </StationpediaPage>
 
@@ -663,14 +665,14 @@ O efeito de cada ingrediente depende das **proporções** utilizadas no composte
       <DisplayFilter>Guides</DisplayFilter>
       <Text>Os alimentos se decompõem com o tempo, transformando-se em {THING:DecayedFood}, a menos que sejam refrigerados em uma atmosfera adequada. A velocidade exata da decomposição varia individualmente conforme os seguintes fatores:
 
-- **TEMPERATURA** – A refrigeração desacelera a decomposição, mas muitos alimentos podem ser danificados quando expostos a pressões extremamente baixas ou a calor excessivo. A temperatura ideal é **0 kelvin (-272 °C)**.
+- TEMPERATURA – A refrigeração desacelera a decomposição, mas muitos alimentos podem ser danificados quando expostos a pressões extremamente baixas ou a calor excessivo. A temperatura ideal é 0 kelvin (-272 °C).
 
-- **TIPO DE ALIMENTO** – Cada tipo de {LINK:OrganicPage;alimento} possui suas próprias propriedades de decomposição. Por exemplo, uma {THING:ItemTomatoSoup} dura muito mais do que um {THING:ItemTomato}.
+- TIPO DE ALIMENTO – Cada tipo de {LINK:OrganicPage;alimento} possui suas próprias propriedades de decomposição. Por exemplo, uma {THING:ItemTomatoSoup} dura muito mais do que um {THING:ItemTomato}.
 
-- **PRESSÃO** – Os alimentos se decompõem mais rapidamente quando a pressão cai abaixo de **1 atmosfera (101 kPa)**. A decomposição ocorre exponencialmente mais rápido à medida que a atmosfera se aproxima do vácuo perfeito.  
+- PRESSÃO – Os alimentos se decompõem mais rapidamente quando a pressão cai abaixo de 1 atmosfera (101 kPa). A decomposição ocorre exponencialmente mais rápido à medida que a atmosfera se aproxima do vácuo perfeito.  
 Pressões mais altas não afetam o processo.
 
-- **ATMOSFERA** – Diferentes gases podem **acelerar ou retardar** o processo de decomposição. O cálculo leva em conta as proporções relativas dos gases em atmosferas mistas para determinar o modificador de decomposição. As seguintes taxas se aplicam a todos os alimentos:
+- ATMOSFERA – Diferentes gases podem **acelerar ou retardar** o processo de decomposição. O cálculo leva em conta as proporções relativas dos gases em atmosferas mistas para determinar o modificador de decomposição. As seguintes taxas se aplicam a todos os alimentos:
 
 > {GAS:Oxygen} x 1.3
 > {GAS:Nitrogen} x 0.6
@@ -679,7 +681,7 @@ Pressões mais altas não afetam o processo.
 > {GAS:Pollutant} x 3
 > {GAS:NitrousOxide} x 1.5
 > {GAS:Water} x 2
-> **Vácuo** – ver *PRESSÃO* (acima).
+> Vácuo – ver PRESSÃO (acima).
 	  </Text>
     </StationpediaPage>
 
@@ -689,11 +691,11 @@ Pressões mais altas não afetam o processo.
       <DisplayFilter>Guides</DisplayFilter>
       <Text>Um Stationeer médio precisa beber água regularmente. No entanto, regulamentos de saúde e segurança da {LINK:ODA;ODA}, obscuros e possivelmente equivocados, há muito tempo negam aos Stationeers o direito de mecanismos de hidratação integrados ao traje. Em vez disso, eles devem fazer pausas regulares para abrir o capacete e ingerir água — algo nada recomendado em ambientes sem pressão.
 
-**Com que frequência beber?** Isso depende do seu nível de dificuldade, da temperatura do planeta e de quanto você gosta de se movimentar.
+Com que frequência beber? Isso depende do seu nível de dificuldade, da temperatura do planeta e de quanto você gosta de se movimentar.
 
 A água pode ser obtida de várias formas. Pelo menos uma {THING:ItemWaterBottle} é fornecida aos Stationeers como parte das rações ao pousar em novos planetas, com mais unidades armazenadas nas caixas do módulo de pouso. Essas garrafas podem ser recarregadas usando um {THING:StructureWaterBottleFillerPoweredBottom}, que deve estar conectado a uma rede de tubulação de líquidos. Essa rede, por sua vez, pode ser abastecida utilizando uma {THING:StructureIceCrusher} com um suprimento adequado de gelo.
 
-A taxa de sede pode ser ajustada no menu principal de configurações, alterando o controle deslizante de **Taxa de Fome/Hidratação**.
+A taxa de sede pode ser ajustada no menu principal de configurações, alterando o controle deslizante de Taxa de Fome/Hidratação.
 	  </Text>
     </StationpediaPage>
 
@@ -701,7 +703,7 @@ A taxa de sede pode ser ajustada no menu principal de configurações, alterando
       <Key>EVAPage</Key>
       <Title>Trajes EVA</Title>
       <DisplayFilter>Guides</DisplayFilter>
-      <Text>Seu traje espacial fornece uma atmosfera portátil, com configurações ajustáveis de **pressão** e **temperatura (ar-condicionado)**, além de um **sistema de alerta** que o notificará caso a atmosfera interna se torne perigosa. Ele funciona em conjunto com um capacete compatível, bem como com cilindros de gás e filtros adequados inseridos nos compartimentos do traje. Esses componentes precisam ser trocados regularmente e também podem ser recarregados (ou esvaziados) usando uma {THING:StructureSuitStorage}.
+      <Text>Seu traje espacial fornece uma atmosfera portátil, com configurações ajustáveis de pressão e temperatura (ar-condicionado), além de um sistema de alerta que o notificará caso a atmosfera interna se torne perigosa. Ele funciona em conjunto com um capacete compatível, bem como com cilindros de gás e filtros adequados inseridos nos compartimentos do traje. Esses componentes precisam ser trocados regularmente e também podem ser recarregados (ou esvaziados) usando uma {THING:StructureSuitStorage}.
 
 Existem vários tipos de traje, incluindo o {THING:ItemEvaSuit} e o mais resistente {THING:ItemHardSuit}, capaz de suportar pressões e temperaturas mais extremas.
 
@@ -713,21 +715,21 @@ Os indicadores do seu traje aparecem no canto inferior direito da tela. Pression
 - Aumentar / Diminuir Pressão (faixa de 0 kPa a 202 kPa, ou 0–2 atmosferas terrestres)  
 - Aumentar / Diminuir Temperatura (faixa de 0°C a 60°C)  
 
-Os trajes possuem de **6 a 8 compartimentos**:  
-- **Cilindro de ar (x1)** – insira um cilindro comum ou inteligente contendo uma mistura respirável, por exemplo, {GAS:Oxygen} ou {GAS:Nitrogen}/{GAS:Oxygen} na proporção 35/65.  
-- **Cilindro de resíduos (x1)** – armazena os gases removidos pelos filtros.  
-- **Suporte de vida (x1)** – abriga uma bateria, que alimenta o A/C, luzes e outros sistemas.  
-- **{SLOT:GasFilter} (x3)** – requer pelo menos um {THING:ItemGasFilterCarbonDioxide} (para humanos), dependendo da mistura de gases respiráveis.  
-  Observação: o {THING:ItemHardSuit} possui **4 compartimentos de filtro**.  
-- **IC** – disponível apenas no {THING:ItemHardSuit}.
+Os trajes possuem de 6 a 8 compartimentos:  
+- Cilindro de ar (x1) – insira um cilindro comum ou inteligente contendo uma mistura respirável, por exemplo, {GAS:Oxygen} ou {GAS:Nitrogen}/{GAS:Oxygen} na proporção 35/65.  
+- Cilindro de resíduos (x1) – armazena os gases removidos pelos filtros.  
+- Suporte de vida (x1) – abriga uma bateria, que alimenta o A/C, luzes e outros sistemas.  
+- {SLOT:GasFilter} (x3) – requer pelo menos um {THING:ItemGasFilterCarbonDioxide} (para humanos), dependendo da mistura de gases respiráveis.  
+  Observação: o {THING:ItemHardSuit} possui 4 compartimentos de filtro.  
+- IC – disponível apenas no {THING:ItemHardSuit}.
 
-**Pressão:** deve ser ajustada entre **50 e 100 kPa** (0,5 a 1 atmosfera terrestre). Humanos no jogo toleram até aproximadamente **250 kPa** e podem sobreviver brevemente a cerca de **300 kPa**.
+Pressão: deve ser ajustada entre 50 e 100 kPa (0,5 a 1 atmosfera terrestre). Humanos no jogo toleram até aproximadamente 250 kPa e podem sobreviver brevemente a cerca de ~300 kPa.
 
-**Temperatura:** normalmente ajustada entre **18°C e 21°C**. Humanos no jogo preferem entre **10°C e 29°C**, toleram **0°C a 39°C** e sobrevivem até cerca de **49°C**. Em temperaturas mais altas, o A/C consumirá mais energia da bateria para manter a temperatura interna.
+Temperatura: normalmente ajustada entre 18°C e 21°C. Humanos no jogo preferem entre 10°C e 29°C, toleram 0°C a 39°C e sobrevivem até cerca de 49°C. Em temperaturas mais altas, o A/C consumirá mais energia da bateria para manter a temperatura interna.
 
-**Filtros:** o filtro padrão é o de {GAS:CarbonDioxide}, que captura o gás exalado pelos humanos. Se você não estiver usando 100% de {GAS:Oxygen} na mistura respirável, adicione filtros adicionais. Por exemplo, se usar uma mistura de 25% {GAS:Oxygen} e 75% {GAS:Nitrogen}, o nitrogênio se acumulará no traje com o tempo, levando à asfixia, a menos que um filtro de nitrogênio esteja instalado. Se você tiver os filtros e gases corretos, mas ainda estiver enfrentando problemas, use a função **“Flush”** (Descarga) no seu capacete espacial. Alertas de baixo ou crítico nível de oxigênio soarão quando os filtros deixarem de funcionar.
+Filtros: o filtro padrão é o de {GAS:CarbonDioxide}, que captura o gás exalado pelos humanos. Se você não estiver usando 100% de {GAS:Oxygen} na mistura respirável, adicione filtros adicionais. Por exemplo, se usar uma mistura de 25% {GAS:Oxygen} e 75% {GAS:Nitrogen}, o nitrogênio se acumulará no traje com o tempo, levando à asfixia, a menos que um filtro de nitrogênio esteja instalado. Se você tiver os filtros e gases corretos, mas ainda estiver enfrentando problemas, use a função “Flush” (Descarga do cilindro) no seu capacete espacial. Alertas de nível baixo ou crítico de oxigênio soarão quando os filtros deixarem de funcionar.
 
-Se o traje for danificado, ele pode ser reparado segurando uma fita adesiva (duct tape) na mão e pressionando o botão de **Ativar**.
+Se o traje for danificado, ele pode ser reparado segurando uma fita adesiva (duct tape) na mão e pressionando o botão de Ativar.
 	  </Text>
     </StationpediaPage>
 
