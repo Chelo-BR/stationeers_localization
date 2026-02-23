@@ -1,8 +1,8 @@
-﻿<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>Português (Brasil)</Name>
   <Code>PB</Code>
   <Font>font_english</Font>
-  <!--Traducao Marcelo 11/12/2025 versao 26682-->
+  <!--Traducao Marcelo 22/02/2026 versao 26943-->
   <ScreenSpaceToolTips>
     <Record>
       <Key>StatusIconToxinName</Key>
@@ -26,7 +26,7 @@
     </Record>
     <Record>
       <Key>HydrationCaution</Key>
-      <Value>Atenção: Hidratação</Value>
+      <Value>Atenção com a Hidratação</Value>
     </Record>
     <Record>
       <Key>HydrationCritical</Key>
@@ -46,11 +46,11 @@
     </Record>
     <Record>
       <Key>StatusIconOxygenWarning</Key>
-      <Value>O cilindro do traje está ficando vazio e precisa de atenção</Value>
+      <Value>O cilindro do seu traje está ficando vazio e precisa de atenção</Value>
     </Record>
     <Record>
       <Key>StatusIconOxyegnCritical</Key>
-      <Value>O cilindro do traje está em nível crítico, substitua o tanque de oxigênio</Value>
+      <Value>O cilindro do seu traje está em nível crítico, substitua o tanque de oxigênio</Value>
     </Record>
     <Record>
       <Key>StatusIconPressureName</Key>
@@ -58,7 +58,7 @@
     </Record>
     <Record>
       <Key>StatusIconPressureDesc</Key>
-      <Value>Nível atual de pressão, verifique a pressão do traje</Value>
+      <Value>Nível de pressão atual, verifique a pressão do traje.</Value>
     </Record>
     <Record>
       <Key>StatusIconPressureWarning</Key>
@@ -74,7 +74,7 @@
     </Record>
     <Record>
       <Key>StatusIconTemperatureDesc</Key>
-      <Value>Temperatura atual dentro do traje</Value>
+      <Value>Temperatura atual dentro do seu traje</Value>
     </Record>
     <Record>
       <Key>StatusIconTempuratureWarning</Key>
