@@ -27129,7 +27129,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>RocketNextLocationETA</Key>
-      <Value>Tempo Estimado de Chegada ao Próximo Local</Value>
+      <Value>Tempo até o Próximo Local</Value>
     </Record>
     <Record>
       <Key>RocketNextLocation</Key>
