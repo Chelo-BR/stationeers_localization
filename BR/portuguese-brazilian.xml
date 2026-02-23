@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Português (Brasil)</Name>
-  <Code>PB</Code>  <!--Traducao Marcelo 11/12/2025 versao 26682-->
-
+  <Code>PB</Code>  <!--Traducao Marcelo 22/02/2026 versao 26943-->
   <Reagents>
     <RecordReagent>
       <Key>Flour</Key>
@@ -572,6 +571,7 @@ Basta parafusá-lo em uma {THING:StructureBench} usando uma {THING:ItemWrench} p
 	  <Value>Parte do Corpo - Perna Direita de Astronauta (Feminino)</Value>
 	  <Description>Esta é a perna direita de uma mulher. Pelo estado dela, parecia estar com boa saúde, altura mediana e tendência a caminhar na ponta dos pés.</Description>
 	</RecordThing>
+
     <RecordThing>
 	  <Key>BodyPartAstronautFemaleTorso</Key>
 	  <Value>Parte do Corpo - Tronco de Astronauta (Feminino)</Value>
@@ -846,6 +846,7 @@ Basta parafusá-lo em uma {THING:StructureBench} usando uma {THING:ItemWrench} p
 	  <Key>CircuitboardAirlockControl</Key>
 	  <Value>Câmara de Ar</Value>
 	  <Description>Diz a lenda que foi primeiro rabiscada na parede de um banheiro da {LINK:Norsec;Norsec} por um engenheiro insatisfeito, mas a placa de circuito de controle de câmara de ar Exgress conquistou seu espaço graças à versatilidade e facilidade de fabricação, tornando-se o sistema de controle preferido dos {LINK:Stationeers;Stationeers} para protocolos de ciclo de {THING:StructureAirlock}.
+
 Para entrar no modo de configuração, insira a placa em uma {THING:StructureConsole} junto com um disco de dados. Nesse modo, você verá todos os objetos acessíveis via dados conectados ao {THING:StructureConsole}. Portas, luzes, sensores de gás e consoles subordinados podem ser selecionados (destacados em verde) e passarão a ser controlados assim que o disco de dados for removido.</Description>
 	</RecordThing>
 	<RecordThing>
@@ -1240,6 +1241,11 @@ Para usar em si mesmo: coloque a fita adesiva na mão ativa e segure o BOTÃO DI
       <Value>Cilindo Líquido</Value>
       <Description />
     </RecordThing>
+
+
+
+
+
 	<RecordThing>
 	  <Key>ItemGasFilterCarbonDioxide</Key>
 	  <Value>Filtro (Dióxido de Carbono)</Value>
@@ -1860,11 +1866,11 @@ A placa-mãe de classificação K-cops 10-10, projetada pela {LINK:Norsec;Norsec
       <Description>Os pulmões são órgãos delicados. Mantê-los na temperatura e pressão corretas é altamente recomendável.</Description>
 	</RecordThing>
 	<RecordThing>
-	  <Key>DynamicBodyBag</Key>
-	  <Value>Saco Mortuário</Value>
-	  <Description>Quando jogadores mortos entram em decomposição, eles serão colocados em um saco mortuário. Se ainda não tiverem ressuscitado, o jogador morto pode ser revivido em um {THING:StructureCryoTube}.</Description>
-    </RecordThing>
-	<RecordThing>
+      <Key>DynamicBodyBag</Key>
+      <Value>Saco para cadáveres</Value>
+      <Description>Quando os jogadores mortos se decompõem, seus corpos são colocados em um saco para cadáveres. Se eles não tiverem reaparecido, o jogador morto pode ser revivido em um saco para cadáveres.{THING:StructureCryoTube}.</Description>
+    </RecordThing>			  
+    <RecordThing>
       <Key>SpaceShuttle</Key>
       <Value>Nave Espacial</Value>
       <Description>Uma antiga nave de transporte {LINK:Sinotai;Sinotai}, há muito tempo desativada.</Description>
@@ -2345,9 +2351,9 @@ Exibindo a pressão interna das redes de tubos, ele também mostra a temperatura
       <Key>StructurePipeMeter</Key>
       <Value>Medidor de Tubo</Value>
       <Description>Embora o programa Stationeers até agora tenha inspirado pouco em termos de poesia clássica, o seguinte haikai foi encontrado gravado, ironicamente, em um pedaço de tubo destruído em Vulcan:
-"Humilde medidor
-fala a verdade, transmite
-pressão em qualquer tubo"</Description>
+"Humilde medidor de tubulação
+diz a verdade, transmite a
+pressão em qualquer tubulação"</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructurePipeRadiator</Key>
@@ -2467,6 +2473,10 @@ Todas as conexões de tubos devem estar corretamente ligadas; caso contrário, o
     <RecordThing>
       <Key>StructureTankSmall</Key>
       <Value>Tanque Pequeno</Value>
+	</RecordThing>
+    <RecordThing>
+      <Key>StructureTankSmallInLine</Key>
+      <Value>Tanque Pequeno</Value>				  
     </RecordThing>
     <RecordThing>
       <Key>StructureTankSmallAir</Key>
@@ -3147,6 +3157,10 @@ Observe que os transformadores também atuam como isoladores de dados, impedindo
     <RecordThing>
       <Key>StructureTankBig</Key>
       <Value>Tanque Grande</Value>
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureTankBigInLine</Key>
+      <Value>Tanque Grande</Value>	   
     </RecordThing>
     <RecordThing>
       <Key>ItemPotato</Key>
@@ -5235,6 +5249,15 @@ Com um {THING:ItemIntegratedCircuit10} no {SLOT:ProgrammableChip}, é possível 
     <RecordThing>
       <Key>StructureTankBigInsulated</Key>
       <Value>Tanque Grande (Isolado)</Value>
+	</RecordThing>
+    <RecordThing>
+      <Key>StructureTankSmallInsulatedInLine</Key>
+      <Value>Tanque Pequeno (isolado)</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureTankBigInsulatedInLine</Key>
+      <Value>Tanque Grande (isolado)</Value>
     </RecordThing>
     <RecordThing>
       <Key>ItemKitTankInsulated</Key>
@@ -5871,6 +5894,16 @@ Para usar em si mesmo: segure a fita adesiva na mão ativa e mantenha pressionad
       <Description />
     </RecordThing>
     <RecordThing>
+      <Key>StructureLiquidTankBigInLine</Key>
+      <Value>Tanque Líquido Grande</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureLiquidTankSmallInLine</Key>
+      <Value>Tanque Líquido Pequeno</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>											 
       <Key>ItemKitLiquidTank</Key>
       <Value>Kit (Tanque de Líquido)</Value>
       <Description />
@@ -5887,6 +5920,16 @@ Para usar em si mesmo: segure a fita adesiva na mão ativa e mantenha pressionad
     </RecordThing>
     <RecordThing>
       <Key>StructureLiquidTankSmallInsulated</Key>
+      <Value>Tanque de Líquido Pequeno (Isolado)</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureLiquidTankBigInsulatedInLine</Key>
+      <Value>Tanque de Líquido Grande (Isolado)</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureLiquidTankSmallInsulatedInLine</Key>
       <Value>Tanque de Líquido Pequeno (Isolado)</Value>
       <Description />
     </RecordThing>
@@ -6952,6 +6995,16 @@ Altamente sensível à temperatura, o nitrice começa a derreter assim que é mi
       <Description>Perfura o terreno até atingir o leito rochoso. Uma vez dentro do leito rochoso, {THING:ItemDirtyOre} é produzido aproximadamente a cada 90 segundos</Description>
     </RecordThing>
     <RecordThing>
+      <Key>StructureCombustionDeepMiner</Key>
+      <Value>Minerador de Combustão Profunda</Value>
+      <Description>A Mineradora Profunda de Combustão é uma versão a gás da {THING:StructureDeepMiner}. A rotação da máquina deve ser controlada pelas alavancas do acelerador e do limitador de combustão. Se a Mineradora Profunda de Combustão aumentar ou diminuir a rotação muito rapidamente, ela sofrerá sobrecarga e eventualmente parará.
+Rotações mais altas resultam diretamente em velocidades de mineração mais rápidas.
+A alavanca do acelerador controla a quantidade de combustível que entra na máquina, aumentando a temperatura dentro do motor e levando a um aumento na rotação.
+A alavanca do limitador influencia a velocidade da combustão e a quantidade de gás não queimado no escapamento.
+Desligar a máquina reduzirá a rotação de forma controlada.
+	  </Description>
+    </RecordThing>
+    <RecordThing>
       <Key>StructureSleeperVertical</Key>
       <Value>Berço Vertical</Value>
       <Description>A variante vertical do berço. Mantém os jogadores hidratados e alimentados enquanto estão desconectados — desde que uma atmosfera respirável seja fornecida.</Description>
@@ -6979,6 +7032,11 @@ Altamente sensível à temperatura, o nitrice começa a derreter assim que é mi
     <RecordThing>
       <Key>ItemKitDeepMiner</Key>
       <Value>Kit (Perfuradora Profunda)</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitCombustionDeepMiner</Key>
+      <Value>Kit (Mineradora de Combustão Profunda)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -8182,26 +8240,26 @@ O equilíbrio da vazão de ambas as entradas é essencial para criar uma boa tro
       <Key>StructurePressureFedLiquidEngine</Key>
       <Value>Motor a Líquido por Pressão</Value>
       <Description>Altamente eficiente e potente, o Motor a Líquido por Pressão é um motor desafiador de operar em configuração estável. O líquido é puxado da entrada para o motor com base na pressão do gás de entrada. Parte do gás também é movido nesse processo, então os Stationeers precisarão criar um sistema para manter uma alta pressão de gás no tubo de entrada de líquido. A segunda conexão de tubo de líquido é uma conexão opcional de trocador de calor, que troca calor entre o conteúdo dos tubos e o sino do motor. A variável de Configuração define a eficácia do trocador de calor.</Description>
-	 </RecordThing>		  
-	<RecordThing>
+    </RecordThing>
+    <RecordThing>
       <Key>ItemKitPressureFedGasEngineHeavy</Key>
-      <Value>Kit (Motor Pesado a Gás com Alimentação por Pressão)</Value>
+      <Value>Kit (Motor a gás de alta pressão)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructurePressureFedGasEngineHeavy</Key>
-      <Value>Motor Pesado a Gás com Alimentação por Pressão</Value>
-      <Description>Uma variante maior e mais poderosa do {THING:StructurePressureFedGasEngine}. Sacrifica uma pequena quantidade de eficiência para aumentar significativamente a propulsão. Os Motores a Gás com Alimentação por Pressão movem o gás de cada entrada com base na pressão dos tubos de entrada. Controle a proporção de mistura dos combustíveis ajustando as pressões de entrada para alcançar uma mistura 2:1 de {GAS:Volatiles} para {GAS:Oxygen}. Resfriar os gases propelentes ou usar {GAS:NitrousOxide} como oxidante resultará em uma propulsão ainda maior.</Description>
+      <Value>Motor a gás alimentado por alta pressão</Value>
+      <Description>Uma variante maior e mais potente do {THING:StructurePressureFedGasEngine}. Ela sacrifica um pouco de eficiência em troca de um empuxo muito maior. Motores a gás alimentados por pressão movem o gás de cada uma de suas entradas com base na pressão dos tubos de entrada. Controle a proporção da mistura de combustíveis ajustando as pressões de entrada para atingir uma mistura de 2:1 de {GAS:Volatiles} para {GAS:Oxygen}. Resfriar os gases propelentes ou usar {GAS:NitrousOxide} como oxidante resultará em um empuxo ainda maior..</Description>
     </RecordThing>
     <RecordThing>
-     <Key>ItemKitPressureFedLiquidEngineHeavy</Key>
-      <Value>Kit (Motor Líquido Pesado com Alimentação por Pressão)</Value>
+      <Key>ItemKitPressureFedLiquidEngineHeavy</Key>
+      <Value>Kit (Motor Líquido de Alta Pressão)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructurePressureFedLiquidEngineHeavy</Key>
-      <Value>Motor Líquido Pesado com Alimentação por Pressão</Value>
-      <Description>Uma variante maior e mais potente do {THING:StructurePressureFedLiquidEngine}. Sacrifica uma pequena quantidade de eficiência para aumentar significativamente a propulsão. Atenção, os Motores Líquidos com Alimentação por Pressão são desafiadores de operar em uma configuração estável. O líquido é puxado da entrada para o motor com base na pressão do gás de entrada. Parte do gás também se movimenta nesse processo, então os Stationeers precisarão criar um sistema para manter alta pressão de gás no tubo de entrada de líquido. A segunda conexão do tubo de líquido é uma conexão opcional de trocador de calor, que troca calor entre o conteúdo dos tubos e o sino do motor; a variável Setting determina a efetividade do trocador de calor.</Description>
+      <Value>Motor a líquido alimentado por alta pressão</Value>
+      <Description>Uma variante maior e mais potente do {THING:StructurePressureFedLiquidEngine}. Ela sacrifica um pouco de eficiência em troca de um empuxo muito maior. Atenção: motores a líquido alimentados por pressão são difíceis de operar em uma configuração estável. O líquido é puxado da entrada para o motor com base na pressão do gás de entrada. Parte do gás também é movimentada nesse processo, portanto, os usuários da Estação Espacial Internacional precisarão desenvolver um sistema para manter uma alta pressão de gás no tubo de entrada de líquido. A segunda conexão do tubo de líquido é uma conexão opcional para um trocador de calor, que troca calor entre o conteúdo dos tubos e a carcaça do motor. A variável de configuração controla a eficácia do trocador de calor.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureFuselageTypeA1</Key>
@@ -9024,10 +9082,10 @@ Isso permite que outros braços no mesmo trilho passem.</Description>
     <RecordThing>
       <Key>ItemSuitHARM</Key>
       <Value>Traje HARM</Value>
-	  <Description>O Traje HARM é o último recurso do Stationeer contra ambientes hostis.
-Ele é resfriado a líquido para um desempenho térmico excepcional e oferece resistência superior a impactos e exposição à lava. Embora o traje HARM não seja compatível com o {THING:ItemJetpackBasic}, os Stationeers ainda podem equipar uma {THING:ItemHardBackpack} ou {THING:ItemHardMiningBackPack}. Devido à sua maior estabilidade e tamanho, as tempestades não afetam a velocidade de movimento enquanto estiver em um traje HARM; no entanto, isso resulta em uma redução geral na movimentação durante a operação.
+	  <Description>O traje HARM é o último recurso do Stationeer contra ambientes hostis.
+Ele possui resfriamento líquido para um desempenho térmico excepcional e oferece resistência superior a impactos e exposição à lava. Embora o traje HARM não seja compatível com um {THING:ItemJetpackBasic}, os Stationeers ainda podem equipar uma {THING:ItemHardBackpack} ou uma {THING:ItemHardMiningBackPack}. Devido à sua estabilidade e tamanho extras, as tempestades não afetam a velocidade de movimento enquanto o traje HARM estiver em uso; no entanto, isso resulta em uma redução geral na velocidade de movimento durante as operações normais.
 
-</Description>
+	  </Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemSuitHelmetHARM</Key>
@@ -9218,201 +9276,201 @@ Ele é resfriado a líquido para um desempenho térmico excepcional e oferece re
     </RecordThing>
     <RecordThing>
       <Key>StructureVendingMachineSmall1</Key>
-      <Value>Máquina de Vendas Pequena 1</Value>		   
+      <Value>Máquina de Venda Automática Pequena1</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureSuitStorageFrame</Key>
-      <Value>Estrutura de Armazenamento de Trajes</Value>
-      <Description>Organizada e útil, a estrutura de armazenamento de trajes guarda um {THING:ItemEvaSuit}, um {THING:ItemSpaceHelmet} e um {THING:ItemJetpackBasic}. 
-Quando energizada e conectada a {GAS:Oxygen} e {GAS:Nitrogen}, ela recarregará as baterias do traje, reabastecerá o {THING:ItemGasCanisterOxygen} e o seu {THING:ItemGasCanisterNitrogen} {SLOT:GasCanister}. O tanque de resíduos será bombeado para o tubo conectado à saída de descarte.
-Todos os tubos da estrutura devem estar conectados ou a unidade exibirá um estado de erro, mas ainda assim carregará a bateria.</Description>
+      <Value>Estrutura de armazenamento do Traje</Value>
+      <Description>Organizado e útil, o suporte para o traje comporta um {THING:ItemEvaSuit}, um {THING:ItemSpaceHelmet} e um {THING:ItemJetpackBasic}.
+Quando ligado e conectado a {GAS:Oxygen} e {GAS:Nitrogen}, ele recarregará as baterias do traje, reabastecerá o {THING:ItemGasCanisterOxygen} e o seu {THING:ItemGasCanisterNitrogen} {SLOT:GasCanister}. O tanque de resíduos será esvaziado pelo cano conectado à saída de resíduos.
+Todos os canos do suporte devem estar conectados, caso contrário, a unidade exibirá um estado de erro, mas ainda assim carregará a bateria.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureSuitStorageLocker</Key>
-      <Value>Armário de Armazenamento de Trajes</Value>
-      <Description>Organizado e útil, o armário de armazenamento de trajes guarda um {THING:ItemEvaSuit}, um {THING:ItemSpaceHelmet} e um {THING:ItemJetpackBasic}.
-Quando energizado e conectado a {GAS:Oxygen} e {GAS:Nitrogen}, ele recarregará as baterias do traje, reabastecerá o {THING:ItemGasCanisterOxygen} e o seu {THING:ItemGasCanisterNitrogen} {SLOT:GasCanister}. O tanque de resíduos será bombeado para o tubo conectado à saída de descarte.
-Todos os tubos do armário devem estar conectados ou a unidade exibirá um estado de erro, mas ainda assim carregará a bateria.</Description>
+      <Value>Armário de armazenamento do Traje</Value>
+      <Description>Organizado e útil, o suporte para o traje comporta um {THING:ItemEvaSuit}, um {THING:ItemSpaceHelmet} e um {THING:ItemJetpackBasic}.
+Quando ligado e conectado a {GAS:Oxygen} e {GAS:Nitrogen}, ele recarregará as baterias do traje, reabastecerá o {THING:ItemGasCanisterOxygen} e o seu {THING:ItemGasCanisterNitrogen} {SLOT:GasCanister}. O tanque de resíduos será esvaziado pelo cano conectado à saída de resíduos.
+Todos os canos do suporte devem estar conectados, caso contrário, a unidade exibirá um estado de erro, mas ainda assim carregará a bateria.</Description>
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_GasTankConnectorPiece</Key>
-      <Value>Conector de Tanque da Plataforma (Gás)</Value>
+      <Value>Conector de tanque de plataforma de pouso (gás)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_LiquidTankConnectorPiece</Key>
-      <Value>Conector de Tanque da Plataforma (Líquido)</Value>
+      <Value>Conector de tanque de plataforma de pouso (líquido)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureInLineTankGas1x3</Key>
-      <Value>Tanque em Linha de Gás 1x3</Value>
+      <Value>Tanque de gás em linha 1x3</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureInLineTankLiquid1x3</Key>
-      <Value>Tanque em Linha de Líquido 1x3</Value>
+      <Value>Tanque de líquido em linha 1x3</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureInsulatedInLineTankGas1x3</Key>
-      <Value>Tanque em Linha de Gás 1x3 (Isolado)</Value>
+      <Value>Tanque de gás em linha 1x3 (isolado)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureInsulatedInLineTankLiquid1x3</Key>
-      <Value>Tanque em Linha de Líquido 1x3 (Isolado)</Value>
+      <Value>Tanque de líquido em linha 1x3 (isolado)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCorner</Key>
-      <Value>Cabo Superpesado (Canto)</Value>
+      <Value>Cabo super-resistente (canto)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCorner3</Key>
-      <Value>Cabo Superpesado (Canto 3)</Value>
+      <Value>Cabo Super-Reforçado (Canto 3)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCorner3Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Canto 3)</Value>
+      <Value>Cabo super-resistente queimado (canto 3)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCorner4</Key>
-      <Value>Cabo Superpesado (Canto 4)</Value>
+      <Value>Cabo Super-Reforçado (Canto 4)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCorner4Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Canto 4)</Value>
+      <Value>Cabo super-resistente queimado (canto 4)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyCornerBurnt</Key>
-      <Value>Cabo Superpesado Queimado (Canto)</Value>
+      <Value>Cabo super-resistente queimado (canto)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction</Key>
-      <Value>Cabo Superpesado (Junção)</Value>
+      <Value>Cabo Super-Reforçado (Junção)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction4</Key>
-      <Value>Cabo Superpesado (Junção 4)</Value>
+      <Value>Cabo Super-Reforçado (Junção 4)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction4Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Junção 4)</Value>
+      <Value>Cabo super-resistente queimado (Junção 4)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction5</Key>
-      <Value>Cabo Superpesado (Junção 5)</Value>
+      <Value>Cabo Super-Reforçado (Junção 5)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction5Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Junção 5)</Value>
+      <Value>Cabo super-resistente queimado (Junção 5)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction6</Key>
-      <Value>Cabo Superpesado (Junção 6)</Value>
+      <Value>Cabo Super-Reforçado (Junção 6)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunction6Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Junção 6)</Value>
+      <Value>Cabo super-resistente queimado (Junção 6)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyJunctionBurnt</Key>
-      <Value>Cabo Superpesado Queimado (Junção)</Value>
+      <Value>Cabo super-resistente queimado (junção)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight</Key>
-      <Value>Cabo Superpesado (Reto)</Value>
+      <Value>Cabo super-reforçado (reto)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight3</Key>
-      <Value>Cabo Superpesado (Reto 3)</Value>
+      <Value>Cabo Super-Reforçado (Reto 3)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight3Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Reto 3)</Value>
+      <Value>Cabo Super-Reforçado Queimado (Reto 3)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight5</Key>
-      <Value>Cabo Superpesado (Reto 5)</Value>
+      <Value>Cabo Super-Reforçado (Reto 5)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight5Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Reto 5)</Value>
+      <Value>Cabo Super-Pesado Queimado (Reto 5)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight10</Key>
-      <Value>Cabo Superpesado (Reto 10)</Value>
+      <Value>Cabo super-reforçado (reto 10)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraight10Burnt</Key>
-      <Value>Cabo Superpesado Queimado (Reto 10)</Value>
+      <Value>Cabo super-resistente queimado (reto 10)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureCableSuperHeavyStraightBurnt</Key>
-      <Value>Cabo Superpesado Queimado (Reto)</Value>
+      <Value>Cabo super-resistente queimado (reto)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>ItemCableCoilSuperHeavy</Key>
-      <Value>Rolo de Cabo (Superpesado)</Value>
+      <Value>Bobina de cabo (superpesada)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructurePacker</Key>
       <Value>Carregador</Value>
-      <Description>O Carregador pegará objetos do seu slot esquerdo e os colocará nos slots disponíveis do objeto inserido no slot direito. Os slots serão preenchidos em ordem, do primeiro ao último. Se nenhum slot disponível for encontrado, o objeto do slot esquerdo será ejetado. O objeto do slot direito será ejetado automaticamente quando estiver cheio ou quando a alavanca for puxada.</Description>
+      <Description>O carregador pegará objetos do seu compartimento esquerdo e os colocará nos compartimentos disponíveis do objeto inserido no compartimento direito. Os compartimentos serão preenchidos em ordem, do primeiro ao último. Se nenhum compartimento disponível for encontrado, o objeto do compartimento esquerdo será ejetado. O objeto do compartimento direito será ejetado automaticamente quando estiver cheio ou se a alavanca for acionada.</Description>
     </RecordThing>
     <RecordThing>
       <Key>CardboardBoxLarge</Key>
-      <Value>Caixa de Papelão Grande</Value>
+      <Value>Caixa de papelão grande</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>DynamicAFrameStripes</Key>
-      <Value>Sinalização Portátil em A (Listras)</Value>
+      <Value>Placa portátil em formato de A (listrada)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>DynamicAFrameWIP</Key>
-      <Value>Sinalização Portátil em A (Em Construção)</Value>
+      <Value>Placa portátil em formato de A (em desenvolvimento)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>DynamicWorkCone</Key>
-      <Value>Cones de Sinalização Portátil</Value>
+      <Value>Cone de trabalho portátil</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>ItemKitDynamicAFrameStripes</Key>
-      <Value>Kit Placa Portátil em A (Listras)</Value>
+      <Value>Kit de cavalete portátil (listrado)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>ItemKitDynamicAFrameWIP1</Key>
-      <Value>Kit Placa Portátil em A (Em Obras)</Value>
+      <Value>Kit para cavalete portátil (em desenvolvimento)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -9437,7 +9495,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </RecordThing>
     <RecordThing>
       <Key>DynamicChannelizer</Key>
-      <Value>Canalizador Portátil</Value>
+      <Value>Canalizador portátil</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -9452,33 +9510,86 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </RecordThing>
     <RecordThing>
       <Key>StructureCableFuse500k</Key>
-      <Value>Fusível de Cabo (500 kW)</Value>
+      <Value>Fusível de cabo (500kW)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureSuperLargeDirectHeatExchangeGastoGas</Key>
-      <Value>Troca-Térmica Direta Super-Grande (Gases)</Value>
-      <Description>Os Trocadores de Calor Diretos equalizam a temperatura das duas redes de entrada.</Description>
+      <Value>Trocador de calor direto supergrande (gases)</Value>
+      <Description>Os trocadores de calor diretos equalizam a temperatura das duas redes de entrada.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureSuperLargeDirectHeatExchangeGastoLiquid</Key>
-      <Value>Troca-Térmica Direta Super-Grande (Gás para Líquido)</Value>
-      <Description>Os Trocadores de Calor Diretos equalizam a temperatura das duas redes de entrada.</Description>
+      <Value>Trocador de calor direto supergrande (gás para líquido)</Value>
+      <Description>Os trocadores de calor diretos equalizam a temperatura das duas redes de entrada.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureSuperLargeDirectHeatExchangeLiquidToLiquid</Key>
-      <Value>Troca-Térmica Direta Super-Grande (Líquidos)</Value>
-      <Description>Os Trocadores de Calor Diretos equalizam a temperatura das duas redes de entrada.</Description>
+      <Value>Trocador de calor direto supergrande (líquidos)</Value>
+      <Description>Os trocadores de calor diretos equalizam a temperatura das duas redes de entrada.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemBurgerBox</Key>
-      <Value>Caixa de Hambúrguer</Value>
-      <Description>Um recipiente para um {THING:ItemBurger} que é ao mesmo tempo estético e prático, pois reduz significativamente a taxa de deterioração. Permite comer diretamente o alimento contido quando aberto nas mãos.</Description>
+      <Value>Caixa de hambúrguer</Value>
+      <Description>Um recipiente para um {THING:ItemBurger} que é ao mesmo tempo estético e prático, pois reduzirá significativamente a taxa de deterioração. Permitirá o consumo direto do alimento contido assim que aberto.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureDrinkingFountain2x1</Key>
       <Value>Bebedouro</Value>
-      <Description>O Bebedouro pode ser usado diretamente para aumentar a hidratação. Ele precisa de um suprimento de {GAS:Water}.</Description>
+      <Description>É possível interagir diretamente com o bebedouro para aumentar a hidratação. Ele precisa de um suprimento de {GAS:Water}.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitLiquidFiltration</Key>
+      <Value>Kit (Filtragem de Líquidos)</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureFiltrationLiquid</Key>
+      <Value>Líquido de Filtragem</Value>  
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>DynamicPayloadDeliveryContainer</Key>
+      <Value>Contêiner de entrega de carga útil</Value>
+      <Description>Quando acoplado a um {THING:StructureRocketLargePayloadBay}, o {THING:DynamicPayloadDeliveryContainer} pode ser implantado em órbita baixa para lançar suprimentos em qualquer local do mapa.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitPayloadDeliveryContainer</Key>
+      <Value>Kit (Contêiner de entrega de carga útil)</Value>
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureRocketLargePayloadBay</Key>
+      <Value>Compartimento de carga grande</Value>
+      <Description>O {THING:StructureRocketLargePayloadBay} funciona como um ponto de fixação para o {THING:DynamicPayloadDeliveryContainer}. Defina o local de implantação configurando as variáveis lógicas PositionX e PositionZ no dispositivo. Use a ação de implantação no painel de localização do foguete para implantar uma carga útil acoplada. A variável lógica Open deve ser definida como 1 para iniciar a implantação da carga útil.</Description>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemKitRocketLargePayloadBay</Key>
+      <Value>Kit (Compartimento de carga grande)</Value>
+    </RecordThing>
+    <RecordThing>
+      <Key>ItemDefibrillator</Key>
+      <Value>Desfibrilador</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureCrewModule</Key>
+      <Value>Módulo de Tripulação</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureCrewModuleCableConnectorA</Key>
+      <Value>Conector A do cabo do módulo da tripulação</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureCrewModuleCableConnectorB</Key>
+      <Value>Conector B do cabo do módulo da tripulação</Value>
+      <Description />
+    </RecordThing>
+    <RecordThing>
+      <Key>StructureCrewUmbilical</Key>
+      <Value>Umbilical (Conector)</Value>
+      <Description />
     </RecordThing>
   </Things>
   <Slots>
@@ -12392,7 +12503,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanNamedRegionTalonHeightsWestName</Key>
-      <Value>Alturas Talon Oeste</Value>
+      <Value>Talon Heights West</Value>
     </Record>
     <Record>
       <Key>VulcanNamedRegionTalonHeightsName</Key>
@@ -12600,7 +12711,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanNamedRegionDogsheadName</Key>
-      <Value>Cabeça de Cão</Value>
+      <Value>Dogshead</Value>
     </Record>
     <Record>
       <Key>VulcanNamedRegionTalonPeakName</Key>
@@ -12640,7 +12751,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiSorinCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiKalimarCraterName</Key>
@@ -12648,7 +12759,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiKalimarCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiCinderCraterName</Key>
@@ -12656,7 +12767,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiCinderCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiValourCraterName</Key>
@@ -12664,7 +12775,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiValourCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiOrenCraterName</Key>
@@ -12672,7 +12783,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiOrenCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiTalonCraterName</Key>
@@ -12680,7 +12791,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiTalonCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiToraCraterName</Key>
@@ -12688,7 +12799,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiToraCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiLomaCraterName</Key>
@@ -12696,7 +12807,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>VulcanPoiLomaCraterDescription</Key>
-      <Value>Nova Localização</Value>
+      <Value> </Value>
     </Record>
     <Record>
       <Key>VulcanPoiDogsheadPassageSouthDescription</Key>
@@ -15139,15 +15250,15 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarLacusJaewoo</Key>
-      <Value>Lago Jaewoo</Value>
+      <Value>Lacus Jaewoo</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarPromontoriumSolis</Key>
-      <Value>Promontório Solis</Value>
+      <Value>Promontorium Solis</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarMareSimonis</Key>
-      <Value>Mar Simonis</Value>
+      <Value>Mare Simonis</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarMontesUmbrarum</Key>
@@ -15155,7 +15266,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarVallisLiama</Key>
-      <Value>Vale Liama</Value>
+      <Value>Vallis Liama</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarCraterVeritas</Key>
@@ -15163,7 +15274,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarLabyrinthusPetr</Key>
-      <Value>Labirinto Petr</Value>
+      <Value>Labyrinthus Petr</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarTerraDylan</Key>
@@ -15179,11 +15290,11 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarPalusAeternus</Key>
-      <Value>Pântano Aeternus</Value>
+      <Value>Palus Aeternus</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarMonsArcanus</Key>
-      <Value>Monte Arcanus</Value>
+      <Value>Mons Arcanus</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarCraterElissae</Key>
@@ -15195,7 +15306,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarCraterVesper</Key>
-      <Value>Cratera Vesper</Value>
+      <Value>Crater Vesper</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarPlanitiaSolstitia</Key>
@@ -15231,7 +15342,7 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarMareSomnii</Key>
-      <Value>Mar Somnii</Value>
+      <Value>Mare Somnii</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarRimaSerpentis</Key>
@@ -15247,15 +15358,15 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     </Record>
     <Record>
       <Key>GeoNameLunarCraterNox</Key>
-      <Value>Cratera Nox</Value>
+      <Value>Crater Nox</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarCraterSolaris</Key>
-      <Value>Cratera Solaris</Value>
+      <Value>Crater Solaris</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarCraterNovus</Key>
-      <Value>Cratera Novus</Value>
+      <Value>Crater Novus</Value>
     </Record>
     <Record>
       <Key>GeoNameLunarRupesMagna</Key>
@@ -16393,6 +16504,10 @@ Todos os tubos do armário devem estar conectados ou a unidade exibirá um estad
     <Record>
       <Key>LogicTypeMass</Key>
       <Value>A massa total do foguete em quilogramas, incluindo combustível e carga. Quanto mais massivo o foguete, mais combustível será necessário para se mover para um novo local no espaço.</Value>
+   </Record>
+    <Record>
+      <Key>LogicTypeContactSlotIndex</Key>
+      <Value>O índice do slot em que o comerciante surgiu. Isso define a classe do comerciante, ou seja, Utilidade, Pequeno, Médio etc.</Value>
     </Record>
     <Record>
       <Key>AppearanceButtonRandomize</Key>
@@ -19090,14 +19205,10 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
     <Record>
       <Key>StartNewGameButton</Key>
       <Value>Iniciar Jogo</Value>
-    </Record>
+   </Record>
     <Record>
-      <Key>StationpediaMinCoolantTemperature</Key>
-      <Value>Temperatura Mínima do Refrigeração:</Value>
-    </Record>
-    <Record>
-      <Key>StationpediaMaxCoolantTemperature</Key>
-      <Value>Temperatura Máxima do Refrigeração:</Value>
+      <Key>StationpediaCoolantTemperatureOperatingRange</Key>
+      <Value>Refrigerante:</Value>
     </Record>
     <Record>
       <Key>StationpediaThermalConductivityConvection</Key>
@@ -19109,7 +19220,7 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
     </Record>
 	<Record>
       <Key>StationpediaSolarHeating</Key>
-      <Value>Solar Heating:</Value>
+      <Value>Aquecimento solar:</Value>
     </Record>
 	<Record>
       <Key>StationpediaMovementSpeedModifier</Key>
@@ -19120,31 +19231,14 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
       <Value>Operação Ideal:</Value>
     </Record>
 	<Record>
-      <Key>StationpediaThermalSaturation</Key>
-      <Value>Saturação Térmica:</Value>
+      <Key>StationpediaMaxOperatingTemperatureRange</Key>
+      <Value>Operação máxima:</Value>
     </Record>
-    <Record>
-      <Key>StationpediaMinSafeTemperature</Key>
-      <Value>Temperatura Mínima Segura:</Value>
-    </Record>
-    <Record>
-      <Key>StationpediaMaxSafeTemperature</Key>
-      <Value>Temperatura Máxima Segura::</Value>
-    </Record>
-    <Record>
-      <Key>StationpediaOperatingTemperatureRange</Key>
-      <Value>Temperatura Mínima de Operação:</Value>
-    </Record>
-    <Record>
-      <Key>StationpediaMaxOperatingTemperature</Key>
-      <Value>Temperatura Máxima de Operação:</Value>
-    </Record>
-    <Record>
+	<Record>
       <Key>ScoreboardDaysLived</Key>
-      <Value>Dias Vividos</Value>
+      <Value>Dias vividos</Value>
     </Record>
-
-    <Record>
+   <Record>
       <Key>WorldInfoButtonDeleteBackup</Key>
       <Value>Excluir Backup</Value>
     </Record>
@@ -22343,6 +22437,10 @@ Obrigado pela sua compreensão, e mal podemos esperar para que você experimente
     <Record>
       <Key>StationpediaCryogenicRegeneration</Key>
       <Value>Regeneração Criogênica</Value>
+   </Record>
+    <Record>
+      <Key>ButtonLink</Key>
+      <Value>Link</Value>			 
     </Record>
   </Interface>
   <Colors>
@@ -29550,6 +29648,26 @@ Status: {LOCAL:StatusValue}</Value>
 	<Record>
       <Key>FertilizedEggProcess</Key>
       <Value>O {LOCAL:Thing} é {LOCAL:Percent} para eclosão</Value>
+    </Record>
+    <Record>
+      <Key>ThisDeviceNotOpen</Key>
+      <Value>{LOCAL:Thing} deve estar aberto para operar</Value>
+    </Record>
+    <Record>
+      <Key>RocketLogDeploy</Key>
+      <Value>{LOCAL:DisplayName} implantou com sucesso  {LOCAL:Thing} em x: {LOCAL:X} z:{LOCAL:Z}</Value>
+    </Record>
+    <Record>
+      <Key>RocketDeployFailNotInLowOrbit</Key>
+      <Value>{LOCAL:Payload} Só pode ser implantado em órbita baixa.</Value>
+    </Record>
+    <Record>
+      <Key>RocketDeployFailNoPayload</Key>
+      <Value>Nenhuma carga útil para implantar.</Value>
+    </Record>
+    <Record>
+      <Key>ConstructionBlockedByDynamic</Key>
+      <Value>Construção bloqueada por {LOCAL:Thing}</Value>
     </Record>
   </GameStrings>
   <GameTip />
