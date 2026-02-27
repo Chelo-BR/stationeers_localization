@@ -538,13 +538,13 @@
     <RecordThing>
       <Key>ApplianceMicrowave</Key>
       <Value>Micro-ondas</Value>
-      <Description>Apesar de inúmeros métodos "melhores" de cozinhar {LINK:FoodPage;comida} terem sido inventados nos últimos séculos, poucos são tão duráveis ou fáceis de fabricar quanto o micro-ondas OK-Zoomer. Licenciado pela {LINK:Xigo;Xigo}, seus planos são baseados em um modelo clássico do meio do século XXI, o que lhe dá um charme retrô. Mas não se preocupe, ele oscila moléculas de {GAS:Water} mais do que adequadamente.
-Basta parafusá-lo em uma {THING:StructureBench} usando uma {THING:ItemWrench} para energizá-lo, seguir a receita e pronto, você está cozinhando.</Description>
+      <Description>Apesar de inúmeros métodos "melhores" para cozinhar comida terem sido inventados nos últimos séculos, poucos são tão duráveis ou fáceis de fabricar quanto o micro-ondas OK-Zoomer. Licenciado pela {LINK:Xigo;Xigo}, seus planos são baseados em um modelo clássico do meio do século XXI, o que lhe dá um charme retrô. Mas não se preocupe, ele oscila moléculas de {GAS:Water} mais do que adequadamente.
+Basta parafusá-lo em um {THING:StructureBench} usando uma {THING:ItemWrench} para energizá-lo, seguir a receita e pronto, você está cozinhando.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ApplianceReagentProcessor</Key>
       <Value>Processador de Reagentes</Value>
-      <Description>Situado entre um espremedor de alta potência e um alambique de alquimista, o processador de reagentes da {LINK:Xigo;Xigo} transforma certos materiais brutos e alimentos em ingredientes para culinária e fabricação. Indispensável em qualquer cozinha espacial — é só parafusá-lo à bancada e pronto, está pronto para uso.</Description>
+      <Description>Situado entre um espremedor de alta potência e um alambique de alquimista, o processador de reagentes da {LINK:Xigo;Xigo} transforma certos materiais brutos e alimentos em ingredientes para culinária e fabricação. Indispensável em qualquer cozinha espacial — Basta parafusá-lo em um {THING:StructureBench} usando uma {THING:ItemWrench} para energizá-lo, está pronto para uso.</Description>
     </RecordThing>
     <RecordThing>
 	  <Key>BodyPartAstronautFemaleArmL</Key>
@@ -819,17 +819,17 @@ Basta parafusá-lo em uma {THING:StructureBench} usando uma {THING:ItemWrench} p
 	</RecordThing>
 	<RecordThing>
 	  <Key>CartridgeAtmosAnalyser</Key>
-	  <Value>Cartucho (Analisador Atmosférico)</Value>
-	  <Description>O analisador atmosférico Lorenz é um espectrômetro de massas multifuncional desenvolvido pela {LINK:ExMin;ExMin} para uso com o {THING:ItemTablet} OreCore. Ele exibe a pressão, concentração e quantidade molar de {LINK:GasPage;gás} em salas, tanques ou redes de tubulação.</Description>
+	  <Value>Cartucho de Análise Atmosférica</Value>
+	  <Description>O analisador atmosférico Lorenz é um espectrômetro de massas multifuncional desenvolvido pela {LINK:ExMin;ExMin} para uso com o {THING:ItemTablet} OreCore. Ele exibe a pressão, concentração e quantidade molar de {LINK:GasPage;gás} em salas, tanques ou redes de tubulação, e áreas externas.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CartridgeMedicalAnalyser</Key>
-	  <Value>Cartucho (Analisador Médico)</Value>
+	  <Value>Cartucho Analisador Médico</Value>
 	  <Description>Quando adicionado ao {THING:ItemTablet} OreCore, o analisador médico ReadyMed da {LINK:Asura;Asura} revela o estado de saúde — ou a falta dele — dos vários órgãos dos usuários. Devido a uma falha de projeto, modelos antigos ficaram notórios por emitir níveis de radiação de raio-x semelhantes aos de um quasar. Avanços recentes no isolamento reduziram pela metade o risco para os usuários.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CartridgeNetworkAnalyser</Key>
-	  <Value>Cartucho (Analisador de Rede)</Value>
+	  <Value>Cartucho Analisador de Rede Elétrica</Value>
 	  <Description>Uma pequena obra-prima da engenharia microeletrônica, o analisador de rede exibe a corrente, tensão e potência de uma rede de cabos, assim como os dispositivos conectados a ela. Baseado em um design amplamente copiado da {LINK:Sinotai;Sinotai}, é usado em conjunto com o {THING:ItemTablet} OreCore.</Description>
 	</RecordThing>
 	<RecordThing>
@@ -839,15 +839,13 @@ Basta parafusá-lo em uma {THING:StructureBench} usando uma {THING:ItemWrench} p
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardAirControl</Key>
-	  <Value>Controle de Ar</Value>
+	  <Value>Placa de Controle Atmosférico</Value>
 	  <Description>Quando adicionada a um {THING:StructureConsole}, a placa de circuito de controle de ar permite programar uma {THING:StructureActiveVent}. Assim como cães pequenos e 83% das pessoas, os circuitos de controle de ar têm apenas três modos: Pressão, Circulação e Offline. O modo Pressão mantém uma atmosfera de 100 kPa, alternando a ventilação ativa entre fluxo de entrada e saída até alcançar a pressão desejada. O modo Circulação permite emparelhar ventilações ativas para circular o ar. O modo Offline desativa a ventilação.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardAirlockControl</Key>
-	  <Value>Câmara de Ar</Value>
-	  <Description>Diz a lenda que foi primeiro rabiscada na parede de um banheiro da {LINK:Norsec;Norsec} por um engenheiro insatisfeito, mas a placa de circuito de controle de câmara de ar Exgress conquistou seu espaço graças à versatilidade e facilidade de fabricação, tornando-se o sistema de controle preferido dos {LINK:Stationeers;Stationeers} para protocolos de ciclo de {THING:StructureAirlock}.
-
-Para entrar no modo de configuração, insira a placa em uma {THING:StructureConsole} junto com um disco de dados. Nesse modo, você verá todos os objetos acessíveis via dados conectados ao {THING:StructureConsole}. Portas, luzes, sensores de gás e consoles subordinados podem ser selecionados (destacados em verde) e passarão a ser controlados assim que o disco de dados for removido.</Description>
+	  <Value>Placa de Controle de Airlock</Value>
+	  <Description>Para entrar no modo de configuração, use uma {THING:ItemScrewdriver} no parafuso lateral do {THING:StructureConsole}. Nesse modo, você pode ver todos os objetos com acesso a dados atualmente conectados ao {THING:StructureConsole}. Portas, luzes, sensores de gás e consoles escravos podem ser selecionados (destacados em verde) e serão controlados assim que o parafuso for girado de volta.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>ImGuiCircuitboardAirlockControl</Key>
@@ -855,27 +853,27 @@ Para entrar no modo de configuração, insira a placa em uma {THING:StructureCon
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardCameraDisplay</Key>
-	  <Value>Monitor de Câmera</Value>
-	  <Description>A vigilância às vezes é necessária ao construir bases em ambientes altamente hostis. A placa de circuito de monitor de câmera permite que os Stationeers mais cautelosos transformem um {THING:StructureConsole} em um monitor de segurança quando conectado a uma {THING:StructureCamera}.</Description>
+	  <Value>Placa Monitor da Câmera</Value>
+	  <Description>A vigilância às vezes é necessária ao construir bases em ambientes altamente hostis. A placa de circuito de monitor da câmera permite que os Stationeers mais cautelosos transformem um {THING:StructureConsole} em um monitor de segurança quando conectado a uma {THING:StructureCamera}.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardDoorControl</Key>
-	  <Value>Controle de Porta</Value>
+	  <Value>Placa de Controle de Porta</Value>
 	  <Description>Uma ferramenta básica na construção de bases dos {LINK:Stationeers;Stationeer}, esta placa de circuito permite abrir e fechar remotamente uma {THING:StructureCompositeDoor}, {THING:StructureBlastDoor} ou {THING:StructureGlassDoor}, quando conectada a um {THING:StructureConsole}. Esse sistema pode ser ainda ligado a um {THING:StructureMotionSensor} para criar portas automáticas.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardGasDisplay</Key>
-	  <Value>Exibição de Gás</Value>
+	  <Value>Placa de Exibição de Gás</Value>
 	  <Description>Informação é poder. Coloque esta placa de circuito em um {THING:StructureConsole} para criar uma tela que exibe a pressão ou temperatura do gás de qualquer tanque conectado, recipiente de armazenamento, {THING:ItemPipeAnalyizer} ou {THING:ItemGasSensor}.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardModeControl</Key>
-	  <Value>Controle de Modo</Value>
+	  <Value>Placa de Controle de Modo</Value>
 	  <Description>Não consegue decidir qual modo você mais gosta? Esta placa de circuito permite alternar qualquer dispositivo conectado entre os modos de operação.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardPowerControl</Key>
-	  <Value>Controle de Energia</Value>
+	  <Value>Placa de Controle de Energia</Value>
 	  <Description>Sob sóis distantes e em ambientes desafiadores, os sistemas dos {LINK:Stationeers;Stationeer} precisam equilibrar confiabilidade, resistência e versatilidade. A placa de controle de energia permite ativar e desativar remotamente dispositivos selecionados, desconectando a operação manual.
 
 A placa possui dois modos: 'Vincular' liga ou desliga todos os dispositivos; 'Alternar' muda cada dispositivo para seu estado oposto.</Description>
@@ -887,18 +885,18 @@ A placa possui dois modos: 'Vincular' liga ou desliga todos os dispositivos; 'Al
 	</RecordThing>
 	<RecordThing>
 	  <Key>CircuitboardSolarControl</Key>
-	  <Value>Controle Solar</Value>
-	  <Description>Adicionar uma placa de controle solar a um {THING:StructureConsole} permite controlar manualmente os ângulos horizontal e vertical de qualquer {THING:StructureSolarPanel} conectado.</Description>
+	  <Value>Placa de Controle Solar</Value>
+	  <Description>Adicionar uma placa de controle solar a um {THING:StructureConsole}. Permite controlar manualmente os ângulos horizontal e vertical de qualquer {THING:StructureSolarPanel} conectado.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicAirConditioner</Key>
 	  <Value>Ar Condicionado Portátil</Value>
-	  <Description>O ar condicionado portátil Huxi, projetado pela {LINK:Sinotai;Sinotai}, resfria ao extrair calor da atmosfera e armazená-lo, ou aquece ao liberar calor de seu tanque interno para a atmosfera. Com uma pressão interna máxima de 8106 kPa, sua capacidade é relativamente limitada — a física é clara nesse ponto. Para ampliar sua capacidade de armazenar temperatura, parafuse o Huxi a um {THING:StructureTankConnector} e conecte-o a uma rede de tubulação com fornecimento de {LINK:GasPage;gases} quentes ou frios.</Description>
+	  <Description>O ar condicionado portátil Huxi, projetado pela {LINK:Sinotai;Sinotai}, resfria ao extrair calor da atmosfera e armazená-lo, ou aquece ao liberar calor de seu tanque interno para a atmosfera. Com uma pressão interna máxima de 8106 kPa, sua capacidade é relativamente limitada — a física é clara nesse ponto. Para ampliar sua capacidade de armazenar temperatura, parafuse o Huxi a um {THING:StructurePortablesConnector} e conecte-o a uma rede de tubulação com fornecimento de {LINK:GasPage;gases} quentes ou frios.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicCrate</Key>
 	  <Value>Caixa Dinâmica</Value>
-	  <Description>A humilde caixa dinâmica tornou-se um símbolo da invenção e independência dos {LINK:Stationeers;Stationeer}s. Com doze compartimentos e alças em ambas as extremidades para facilitar o transporte, ela é tanto um item padrão quanto um equipamento essencial para cadetes e comandantes.</Description>
+	  <Description>A humilde caixa dinâmica tornou-se um símbolo da invenção e independência dos {LINK:Stationeers;Stationeer}. Com doze compartimentos e alças em ambas as extremidades para facilitar o transporte, ela é tanto um item padrão quanto um equipamento essencial para cadetes e comandantes. As caixa podem ser instaladas a sua base utilizando-se os {THING:StructureCrateMount}. Para fixar as caixas aos container utilize a ferramenta {THING:ItemWrench}.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicCrateBuildingSupplies</Key>
@@ -933,7 +931,7 @@ A placa possui dois modos: 'Vincular' liga ou desliga todos os dispositivos; 'Al
 	<RecordThing>
 	  <Key>DynamicGasCanisterEmpty</Key>
 	  <Value>Tanque de Gás Portátil</Value>
-	  <Description>Tanques de gás portáteis armazenam gás. Para reabastecer um, parafuse-o em um {THING:ItemTankConnector} e conecte-o a uma rede de tubulação. Tente não ultrapassar 10 MPa de pressão, ou coisas ruins podem acontecer. Quando estiver cheio, você pode reabastecer um {THING:ItemGasCanisterEmpty} conectando-o à seção listrada do tanque. Ou pode ventilar o gás pela válvula de fluxo variável para dentro de um ambiente e criar uma atmosfera.</Description>
+	  <Description>Tanques de gás portáteis armazenam gás. Para reabastecer um, parafuse-o em um {THING:StructurePortablesConnector} usando uma {THING:ItemWrench}, e conecte-o a uma rede de tubulação. Tente não ultrapassar 10 MPa de pressão, ou coisas ruins podem acontecer. Quando estiver cheio, você pode reabastecer um {THING:ItemGasCanisterEmpty} conectando-o à seção listrada do tanque. Ou pode ventilar o gás pela válvula de fluxo variável,instalada na parte superior do tanque para dentro de um ambiente e criar uma atmosfera.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicGasCanisterFuel</Key>
@@ -960,12 +958,12 @@ A placa possui dois modos: 'Vincular' liga ou desliga todos os dispositivos; 'Al
 	  <Value>Tanque de Líquido Portátil (Água)</Value>
 	  <Description>Este tanque portátil armazena apenas líquido. Você só precisa enchê-lo. Para isso, parafuse-o em um {THING:ItemTankConnector} usando uma {THING:ItemWrench}, depois conecte-o a um {THING:StructurePipeLiquidStraight} para fornecer líquido a uma rede.
 Tente manter a pressão abaixo de 10 MPa, ou você vai acabar molhado, machucado e arrependido — e sem nenhuma diversão.
-Você pode reabastecer um {THING:ItemGasCanisterWater} conectando-o à seção listrada do tanque. Ou pode usar uma {THING:ItemWrench} para conectá-lo a um foguete, levá-lo para um lugar distante e seco, e então se sentir bem consigo mesmo.</Description>
+Você pode reabastecer um {THING:ItemLiquidCanisterEmpty} conectando-o à seção onde mostra uma imagem de gota d'água no tanque. Ou pode usar uma {THING:ItemWrench} para conectá-lo a um foguete, levá-lo para um lugar distante e seco, e então se sentir bem consigo mesmo.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicLiquidCanisterEmpty</Key>
 	  <Value>Tanque de Líquido Portátil</Value>
-	  <Description>Este tanque portátil armazena apenas líquido. Você pode parafusá-lo em um {THING:StructurePortablesConnector} usando uma {THING:ItemWrench}, e então conectá-lo a uma rede de tubos para reabastecê-lo. Você pode reabastecer um {THING:ItemGasCanisterWater} conectando-o à seção listrada do tanque. Ou pode usar uma {THING:ItemWrench} para conectá-lo a um foguete, levá-lo para um lugar distante e seco, e então se sentir bem consigo mesmo.</Description>
+	  <Description>Este tanque portátil armazena apenas líquido. Você pode parafusá-lo em um {THING:StructurePortablesConnector} usando uma {THING:ItemWrench}, e então conectá-lo a uma rede de tubos para reabastecê-lo. Tente manter a pressão abaixo de 10 MPa, ou você vai acabar molhado, machucado e arrependido — e sem nenhuma diversão. Você pode reabastecer um {THING:ItemLiquidCanisterEmpty} conectando-o à seção onde mostra uma imagem de gota d'água no tanque. Ou pode usar uma {THING:ItemWrench} para conectá-lo a um foguete, levá-lo para um lugar distante e seco, e então se sentir bem consigo mesmo.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>DynamicGenerator</Key>
@@ -980,7 +978,7 @@ Você pode reabastecer um {THING:ItemGasCanisterWater} conectando-o à seção l
 	<RecordThing>
 	  <Key>DynamicScrubber</Key>
 	  <Value>Purificador de Ar Portátil</Value>
-	  <Description>Um purificador portátil faz exatamente o que o nome sugere: remove substâncias específicas do ar. Por exemplo, ao instalar um {THING:ItemGasFilterCarbonDioxide}, ele irá extrair {GAS:CarbonDioxide} da atmosfera ao redor. Observe que o purificador comporta uma bateria e dois filtros, o que dobra sua velocidade de operação. Legal. Quando atinge uma pressão interna de 8106 kPA, um sinal de erro piscará no interruptor, indicando que precisa ser esvaziado. Você pode ventilá-lo diretamente ou conectá-lo a uma rede de dutos usando um {THING:ItemTankConnector} e uma {THING:ItemWrench}.</Description>
+	  <Description>Um purificador portátil faz exatamente o que o nome sugere: remove substâncias específicas do ar. Por exemplo, ao instalar um {THING:ItemGasFilterCarbonDioxide}, ele irá extrair {GAS:CarbonDioxide} da atmosfera ao redor. Observe que o purificador comporta uma bateria e dois filtros, o que dobra sua velocidade de operação. Legal. Quando atinge uma pressão interna de 8106 kPA, um sinal de erro piscará no interruptor, indicando que precisa ser esvaziado. Você pode ventilá-lo diretamente ou conectá-lo a uma rede de dutos usando um {THING:StructurePortablesConnector} e uma {THING:ItemWrench}.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>EffectSplatEgg</Key>
@@ -1024,7 +1022,7 @@ Você pode reabastecer um {THING:ItemGasCanisterWater} conectando-o à seção l
 	<RecordThing>
 	  <Key>GasTankAir</Key>
 	  <Value>Tanque de Gás (Ar)</Value>
-	  <Description>Tanques portáteis de gás armazenam gás — e somente gás. Para recarregar um, aparafuse-o a um {THING:ItemTankConnector} usando uma {THING:ItemWrench}, depois conecte-o a uma rede de dutos. Tente não ultrapassar 100 atmosferas, ou você vai provar o delicado sabor do arrependimento. Use os tanques para encher um {THING:ItemGasCanisterEmpty} conectando-o à seção listrada do tanque. Ou então, ventile-o em uma sala selada para criar uma atmosfera, prenda-o a um rover para dar uma volta ou apenas use-o como alvo barulhento e caro para prática de tiro.</Description>
+	  <Description>Tanques portáteis de gás armazenam gás — e somente gás. Para recarregar um, aparafuse-o a um {THING:StructurePortablesConnector} usando uma {THING:ItemWrench}, depois conecte-o a uma rede de dutos. Tente não ultrapassar 100 atmosferas, ou você vai provar o delicado sabor do arrependimento. Use os tanques para encher um {THING:ItemGasCanisterEmpty} conectando-o à seção listrada do tanque. Ou então, ventile-o em uma sala selada para criar uma atmosfera, prenda-o a um rover para dar uma volta ou apenas use-o como alvo barulhento e caro para prática de tiro.</Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>ItemActiveVent</Key>
