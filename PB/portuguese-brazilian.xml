@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Português (Brasil)</Name>
-  <Code>PB</Code>  <!--Tradução Marcelo 03/07/2026 Registro de alterações v0.2.6403.27689-->
+  <Code>PB</Code>  <!--Tradução Marcelo 28/08/2026 Registro de alterações v0.2.6420.27780-->
   <Reagents>
     <RecordReagent>
       <Key>Flour</Key>
@@ -863,7 +863,11 @@ Basta parafusá-lo em um {THING:StructureBench} usando uma {THING:ItemWrench} pa
 	<RecordThing>
 	  <Key>CartridgeAtmosAnalyser</Key>
 	  <Value>Cartucho de Análise Atmosférica</Value>
-	  <Description>O analisador atmosférico Lorenz é um espectrômetro de massas multifuncional desenvolvido pela {LINK:ExMin;ExMin} para uso com o {THING:ItemTablet} OreCore. Ele exibe a pressão, concentração e quantidade molar de {LINK:GasPage;gás} em salas, tanques ou redes de tubulação, e áreas externas.</Description>
+	  <Description>O analisador atmosférico Lorenz é um espectrômetro de massas multifuncional desenvolvido pela {LINK:ExMin;ExMin} para uso com o {THING:ItemTablet} OreCore. Ele exibe a pressão, concentração e quantidade em mol de {LINK:GasPage;gás} em salas, tanques ou redes de tubulação, e áreas externas. 
+O cartucho Atmos Analyzer inserido em um tablet permite inspecionar redes de tubulação, recipientes, tanques e diversas máquinas e dispositivos, fornecendo ao jogador uma leitura em tempo real da pressão interna do gás, capacidade volumétrica, volume dos líquidos presentes, temperatura ambiente e uma lista das substâncias contidas, tanto em estado gasoso quanto líquido (incluindo indicadores de mudança de fase para evaporação, condensação ou congelamento), suas quantidades relativas (percentuais) e absolutas (mol). 
+Este modo de inspeção também avalia o nível de estresse do recipiente ou da rede de tubulação (ficando laranja se atingir o nível que causa danos permanentes) afetado pelo excesso de pressão do gás, condensação do gás em líquido ou congelamento do líquido em gelo, condições que o recipiente ou a rede não suportam.
+Quando o tablet não estiver apontado para um objeto específico, ele lerá a atmosfera da sua posição imediata, seja exterior ou interior, com uma leitura semelhante.
+	  </Description>
 	</RecordThing>
 	<RecordThing>
 	  <Key>CartridgeMedicalAnalyser</Key>
@@ -1490,7 +1494,16 @@ Para usar em si mesmo: coloque a fita adesiva na mão ativa e segure o BOTÃO DI
     <RecordThing>
       <Key>ItemKitSleeper</Key>
       <Value>Kit Cápsula de Dormir (Esquerda/Direita/Vertical)</Value>
-      <Description />
+	  <Description>Uma Cápsula de dormir interrompe os temporizadores de fome e sede do ocupante enquanto houver energia, além de envolvê-lo em uma atmosfera potencialmente mais fácil de controlar do que a de um quarto comum.
+
+Uma vez configurado e mantido corretamente, permite um sono controlado, oferecendo um ambiente seguro para encerrar o jogo.
+
+Diferentemente de uma cama, os ocupantes precisam tirar o traje e o capacete (mas não a mochila/uniforme/óculos/cinto, onde o traje pode ser guardado) para usá-la. Isso torna necessário colocar o ocupante em um cômodo habitável para o jogador, considerando sua espécie.
+
+Também pode ser usado no início de partidas brutais para evitar a necessidade de comer e beber enquanto você espera as plantas crescerem. No entanto, isso requer uma base praticamente automatizada.
+- Configuração básica
+A maneira mais simples de instalar uma Cápsula é colocá-lo em um cômodo arejado e, em seguida, conectar a energia e uma ventilação passiva.
+	  </Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemKitSolarPanel</Key>
@@ -1514,7 +1527,7 @@ Para usar em si mesmo: coloque a fita adesiva na mão ativa e segure o BOTÃO DI
     </RecordThing>
     <RecordThing>
       <Key>ItemKitTank</Key>
-      <Value>Kit (Tanque)</Value>
+      <Value>Kit (Tanque para Gases)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -1624,7 +1637,7 @@ Para usar em si mesmo: coloque a fita adesiva na mão ativa e segure o BOTÃO DI
     </RecordThing>
     <RecordThing>
       <Key>ItemPipeMeter</Key>
-      <Value>Kit (Medidor de Tubo)</Value>
+      <Value>Kit (Medidor de Pressão para Tubo de Gás)</Value>
       <Description>Este kit cria um {THING:StructurePipeMeter}.</Description>
     </RecordThing>
     <RecordThing>
@@ -1644,17 +1657,17 @@ Para usar em si mesmo: coloque a fita adesiva na mão ativa e segure o BOTÃO DI
     </RecordThing>
     <RecordThing>
       <Key>ItemPipeValve</Key>
-      <Value>Kit (Válvula de Tubo)</Value>
+      <Value>Kit (Válvula para Tubulação de Gás)</Value>
       <Description>Este kit cria uma {THING:StructureValve}.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemPipeVolumePump</Key>
-      <Value>Kit (Bomba Volumétrica)</Value>
+      <Value>Kit (Bomba Volumétrica para Gases)</Value>
       <Description>Este kit cria uma {THING:StructureVolumePump}.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemLiquidPipeValve</Key>
-      <Value>Kit (Válvulas de Tubo para Líquidos)</Value>
+      <Value>Kit (Válvula para Tubulação de Líquidos)</Value>
       <Description>Este kit cria uma {THING:StructureLiquidValve}.</Description>
     </RecordThing>
     <RecordThing>
@@ -1838,7 +1851,14 @@ Pode não ser elegante, mas {THING:ItemOxite} e {THING:ItemVolatiles} podem ser 
       <Value>Cinto de Ferramentas</Value>
       <Description>Se há um item que representa a vida de um {LINK:Stationeers;Stationeer} acima de todos os outros, é o humilde cinto de ferramentas (Nota do editor: uma pesquisa recente da {LINK:ODA;ODA} sobre equipamentos icônicos dos Stationeers também destacou, com grande aprovação, as ruínas fumegantes e tóxicas de um {THING:StructureFurnace} superpressurizado espalhado entre os destroços carbonizados da sua última base).  
 Projetado para atender aos mais estritos — ou quase — padrões de segurança da ODA, o cinto possui oito compartimentos que armazenam uma única coisa: ferramentas, e {THING:ItemCableCoil}. Não deve ser confundido com o {THING:ItemMiningBelt}.</Description>
-    </RecordThing>
+	</RecordThing>			  
+	<RecordThing>
+	  <Key>ItemCableToolBelt</Key>
+	  <Value>Cinto Elétrico</Value>
+	  <Description>Um Cinto com dois espaços para ferramentas e seis espaços restritos a {THING:ItemCableCoil}, {THING:ItemCableCoilHeavy} e {THING:ItemCableCoilSuperHeavy}.
+
+Quando equipado, o Cinto recarrega a {THING:ItemCableGun} com uma bobina compatível assim que a bobina da própria ferramenta se esgota, e recolhe os cabos desmontados que não couberem em suas mãos.</Description>
+	</RecordThing>
     <RecordThing>
       <Key>ItemUraniumOre</Key>
       <Value>Minério Urânio</Value>
@@ -1862,7 +1882,7 @@ Projetado para atender aos mais estritos — ou quase — padrões de segurança
     <RecordThing>
       <Key>ItemWeldingTorch</Key>
       <Value>Maçarico de Solda</Value>
-      <Description>Guardado no {THING:ItemToolBelt} padrão emitido aos {LINK:Stationeers;Stationeers}, o maçarico Arlite é utilizado para construir diversas estruturas essenciais.  
+      <Description>Guardado no {THING:ItemToolBelt} padrão fornecido aos {LINK:Stationeers;Stationeers}, o maçarico Arlite é utilizado para construir diversas estruturas essenciais.  
 Uma versão aprimorada do clássico modelo “Zairo”, fabricado originalmente pela {LINK:ExMin;ExMin} para montagem de habitats espaciais modulares, o Arlite é alimentado por um único {THING:ItemGasCanisterFuel} e projetado para funcionar igualmente bem no espaço profundo ou em poços gravitacionais intensos.</Description>
     </RecordThing>
     <RecordThing>
@@ -2405,7 +2425,7 @@ Exibindo a pressão interna das redes de tubos, ele também mostra a temperatura
     </RecordThing>
     <RecordThing>
       <Key>StructurePipeMeter</Key>
-      <Value>Medidor de Tubo</Value>
+      <Value>Medidor de Pressão para Tubo de Gás</Value>
       <Description>Embora o programa Stationeers até agora tenha inspirado pouco em termos de poesia clássica, o seguinte haikai foi encontrado gravado, ironicamente, em um pedaço de tubo destruído em Vulcan:
 "Humilde medidor de tubulação
 diz a verdade, transmite a
@@ -2413,7 +2433,7 @@ pressão em qualquer tubulação"</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructurePipeRadiator</Key>
-      <Value>Radiador para Tubulação</Value>
+      <Value>Radiador para Tubulação de Gás</Value>
       <Description>Um trocador de calor simples, os radiadores de tubo podem ser instalados em tubulações para dissipar ou absorver calor, dependendo da temperatura do ambiente. Se o ar ao redor estiver mais quente, o calor será transferido para o gás dentro da rede de tubos — e vice-versa, se estiver mais frio. No vácuo, o calor será irradiado.
 A velocidade da troca de calor dependerá do tipo de gás envolvido. A adição de múltiplos radiadores acelera a transferência térmica.</Description>
     </RecordThing>
@@ -2532,7 +2552,7 @@ Todas as conexões de tubos devem estar corretamente ligadas; caso contrário, o
 	</RecordThing>
     <RecordThing>
       <Key>StructureTankSmallInLine</Key>
-      <Value>Tanque Pequeno</Value>				  
+      <Value>Tanque Pequeno para Gases</Value>				  
     </RecordThing>
     <RecordThing>
       <Key>StructureTankSmallAir</Key>
@@ -2552,16 +2572,16 @@ Todas as conexões de tubos devem estar corretamente ligadas; caso contrário, o
     </RecordThing>
     <RecordThing>
       <Key>StructureValve</Key>
-      <Value>Válvula de Gás</Value>
+      <Value>Válvula para Tubo de Gás</Value>
     </RecordThing>
     <RecordThing>
       <Key>StructureVolumePump</Key>
-      <Value>Bomba Volumétrica</Value>
+      <Value>Bomba Volumétrica para Gases</Value>
       <Description>A Bomba Volumétrica bombeia gases transportáveis. Ela também separa as redes de tubos em sistemas independentes.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureLiquidValve</Key>
-      <Value>Válvula de Líquidos</Value>
+      <Value>Válvula para Líquidos</Value>
     </RecordThing>
     <RecordThing>
       <Key>StructureWallCooler</Key>
@@ -3020,6 +3040,7 @@ Altamente sensível à temperatura, o oxite começa a derreter assim que é mine
     <RecordThing>
       <Key>CartridgeTracker</Key>
       <Value>Cartucho Rastreador</Value>
+	  <Description>O Cartucho de Rastreador permitirá que o tablet indique a direção e forneça a distância até um Localizador fixo ou um Localizador portátil que esteja ligado ou até outro jogador. Usando a roda de rolagem do mouse, será possível selecionar diferentes alvos. Este cartucho também exibe sua localização atual em coordenadas X, Y e Z.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemGasSensor</Key>
@@ -3215,7 +3236,7 @@ Observe que os transformadores também atuam como isoladores de dados, impedindo
     </RecordThing>
     <RecordThing>
       <Key>StructureTankBigInLine</Key>
-      <Value>Tanque Grande</Value>	   
+      <Value>Tanque Grande para Gases</Value>	   
     </RecordThing>
     <RecordThing>
       <Key>ItemPotato</Key>
@@ -3719,6 +3740,28 @@ Observe que os transformadores também atuam como isoladores de dados, impedindo
     <RecordThing>
       <Key>ItemAuthoringTool</Key>
       <Value>Ferramenta de Criação</Value>
+	  <Description>A Ferramenta de Criação é usada para posicionar, aprimorar e excluir estruturas instantaneamente, sem a necessidade de recursos. A Ferramenta de Criação não pode ser fabricada, mas pode ser gerada no Modo Criativo .
+
+No modo criativo, pressione a tecla ponto e vírgula (padrão: ; ) para abrir o Menu de Criação.
+Digite o que deseja no campo de busca e clique no item desejado, selecionando. 
+Pressione F9 para gerar o item selecionado.
+
+Utilizando a Ferramenta de Criação: 
+
+- Estruturas de construção
+Selecione um item no menu de Criação.
+Clique com o botão direito do mouse para entrar no modo de montagem rápida do item selecionado.
+Clique com o botão esquerdo para construir
+
+- Modernização de estruturas
+Clique com o botão esquerdo para atualizar a estrutura.
+
+- Excluindo estruturas
+Mantenha pressionada a tecla Modificador de Quantidade (padrão: C ) e clique na estrutura que deseja excluir.
+
+- Estruturas de cópia
+Selecione "Manter Inventário" (padrão: F ) e clique na estrutura para copiá-la.
+	</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemTerrainEditor</Key>
@@ -3983,6 +4026,7 @@ Observe que os transformadores também atuam como isoladores de dados, impedindo
     <RecordThing>
       <Key>CartridgeAccessController</Key>
       <Value>Cartucho Controlador de Acesso</Value>
+	  <Description>O cartucho de Controle de Acesso permite ao usuário visualizar e alterar o acesso de máquinas de produção, como o Torno Automático, Portas ou Controladores de Energia de Área. Por padrão, todos os itens colocados não terão controles de acesso definidos. Quando um ou mais controles estiverem presentes, o objeto controlado ficará inacessível para qualquer funcionário sem o Cartão de Acesso necessário. Este cartão pode ser fabricado na Impressora de Segurança.</Description>
     </RecordThing>
     <RecordThing>
       <Key>AccessCardBlack</Key>
@@ -4089,6 +4133,7 @@ Observe que os transformadores também atuam como isoladores de dados, impedindo
     <RecordThing>
       <Key>StructureCrateMount</Key>
       <Value>Suporte da Caixa Dinâmica</Value>
+	  <Description>Utilizado para fixar caixas Dinâmicas ao chão para que não se desloquem.</Description>
     </RecordThing>
     <RecordThing>
       <Key>ItemKitCrateMount</Key>
@@ -4249,6 +4294,7 @@ Saída = 1 exporta os itens internos e, por fim, o item principal.</Description>
     <RecordThing>
       <Key>StructureLockerSmall</Key>
       <Value>Armário Pequeno</Value>
+	  <Description>Os armários permitem o armazenamento de itens e podem ser abertos e fechados. Isso pode ser bastante útil nos estágios iniciais do jogo, quando o espaço de armazenamento é limitado.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureLogicBatchSlotReader</Key>
@@ -4440,7 +4486,17 @@ USO: “J” para ativar; “Espaço” para subir; “Ctrl esquerdo” para des
     <RecordThing>
       <Key>CartridgeOreScannerColor</Key>
       <Value>Cartucho de Scanner de Minérios Colorido</Value>
-      <Description>Quando inserido em um {THING:ItemTablet}, o scanner exibirá os minerais ocultos sob o solo em diferentes cores na tela do tablet.</Description>
+      <Description>Quando inserido em um {THING:ItemTablet}, o scanner exibirá os minerais ocultos sob o solo em diferentes cores na tela do tablet.
+Vermelho = Gelo (Voláteis)
+Laranja = Minério (Cobre)
+Amarelo = Minério (Ouro) , Minério (Chumbo) , Minério (Níquel)
+Magenta = Minério (Ferro)
+Roxo = Minério (Cobalto)
+Ciano = Gelo (Nitrice) , Gelo (Oxite)
+Verde = Minério (Urânio)
+Branco = Minério (Prata) , Silício , Gelo (Água)
+Cinza = Carvão
+	  </Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureLogicWriterSwitch</Key>
@@ -4587,7 +4643,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma {THING:MotherboardC
     <RecordThing>
       <Key>ItemLiquidVacuum</Key>
       <Value>Aspirador de Líquidos</Value>
-      <Description>Quando configurado para o modo de entrada, o {THING:ItemLiquidVacuum} remove líquidos do ambiente e os armazena em seu tanque interno. Quando configurado para o modo de saída, ele esvazia o tanque de volta para o ambiente. Despeje sobre um {THING:StructureFloorDrain} para devolver o líquido à tubulação.</Description>
+      <Description>Quando configurado para o modo de entrada, o {THING:ItemLiquidVacuum} remove líquidos do ambiente e os armazena em seu tanque interno. Quando configurado para o modo de saída, ele esvazia o tanque de volta para o ambiente. Despeje sobre uma {THING:StructureFloorDrain} para devolver o líquido à tubulação.</Description>
     </RecordThing>
     <RecordThing>
       <Key>RoverCargo</Key>
@@ -4596,6 +4652,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma {THING:MotherboardC
     <RecordThing>
       <Key>ItemCreditCard</Key>
       <Value>Cartão de Crédito</Value>
+	  <Description>O cartão de crédito serve para armazenar dinheiro para que você possa usá-lo para negociar com as naves comerciais. Ele também funciona com a Plataforma de Pouso, a Antena Parabólica e a Máquina de Vendas Automática, permitindo que você chame as naves comerciais e compre ou venda itens para elas.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureRover</Key>
@@ -4663,6 +4720,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma {THING:MotherboardC
     <RecordThing>
       <Key>ItemCoffeeMug</Key>
       <Value>Caneca de Café</Value>
+	  <Description>Caneca de café para beber café... oh não, não há café no espaço! (Apenas para uso decorativo)</Description>
     </RecordThing>
     <RecordThing>
       <Key>Robot</Key>
@@ -5009,6 +5067,7 @@ USO: ‘J’ para ativar; ‘Espaço’ para subir; ‘Ctrl Esquerdo’ para des
     <RecordThing>
       <Key>ItemTerrainManipulator</Key>
       <Value>Manipulador de Terreno</Value>
+	  <Description>O Manipulador de Terreno é uma ferramenta usada para manipular o terreno; ele precisa de uma bateria para funcionar e um recipiente para terra para ser utilizado. Enquanto estiver com a ferramenta na mão ativa, use o botão direito do mouse ou a tecla 'O' para ligar/desligar. Use o botão esquerdo do mouse para usar. Pode ser usada para adicionar material ao terreno, sendo útil para qualquer tipo de terraformação. Para Utilizar o Manipulador de Terreno utiliza-se o {THING:ItemDirtCanister}.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureReverseElectrolyzer</Key>
@@ -5991,12 +6050,12 @@ Para usar em si mesmo: segure a fita adesiva na mão ativa e mantenha pressionad
     </RecordThing>
     <RecordThing>
       <Key>ItemWaterPipeMeter</Key>
-      <Value>Kit (Medidor de Tubulação de Líquido)</Value>
+      <Value>Kit (Medidor de Pressão para Tubo de Líquido)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>StructureWaterPipeMeter</Key>
-      <Value>Medidor de Tubulação de Líquido</Value>
+      <Value>Medidor de Pressão para Tubo de Líquido</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -6613,12 +6672,12 @@ Observação: a Cannifier exibirá um erro no interruptor de ativação se você
     </RecordThing>
     <RecordThing>
       <Key>ItemLiquidPipeHeater</Key>
-      <Value>Kit (Aquecedor de Tubulação - Líquido)</Value>
+      <Value>Kit (Aquecedor de Tubulação de Líquido)</Value>
       <Description>Cria um {THING:StructureLiquidPipeHeater}.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureLiquidPipeHeater</Key>
-      <Value>Aquecedor de Tubulação Líquido</Value>
+      <Value>Aquecedor Tubulação de Líquido</Value>
       <Description>Adiciona 1000 joules de calor por ciclo ao conteúdo da sua rede de tubulação.</Description>
     </RecordThing>
     <RecordThing>
@@ -7002,7 +7061,7 @@ Altamente sensível à temperatura, o nitrice começa a derreter assim que é mi
     </RecordThing>
     <RecordThing>
       <Key>StructurePipeRadiatorFlat</Key>
-      <Value>Radiador de Tubulação</Value>
+      <Value>Radiador para Tubulação de Gás</Value>
       <Description>Um radiador montado em tubo, otimizado para dissipar calor no vácuo.</Description>
     </RecordThing>
     <RecordThing>
@@ -7032,12 +7091,12 @@ Altamente sensível à temperatura, o nitrice começa a derreter assim que é mi
     </RecordThing>
     <RecordThing>
       <Key>ItemKitPipeRadiator</Key>
-      <Value>Kit (Radiador de Tubulação)</Value>
+      <Value>Kit (Radiador para Tubulação de Gás)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>ItemKitPipeRadiatorLiquid</Key>
-      <Value>Kit (Radiador de Tubulação de Líquido)</Value>
+      <Value>Kit (Radiador de Tubulação para Líquido)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -7180,8 +7239,8 @@ Para faixas de temperatura e pressão, quatro genes aparecem no mesmo widget. Os
     <RecordThing>
       <Key>CartridgePlantAnalyser</Key>
       <Value>Cartucho Analisador de Plantas</Value>
-      <Description />
-    </RecordThing>
+      <Description>O cartucho Analisador de Plantas oferece uma ajuda inestimável na agricultura, pois permite aos jogadores analisar o estado e as necessidades das plantas usando um tablet. Ele fornece informações detalhadas que vão além do que é mostrado apenas olhando para a planta, incluindo necessidades específicas como luz, água e condições atmosféricas, bem como a genética da planta. Isso ajuda a obter informações sobre a eficiência do crescimento de uma planta e a identificar quaisquer problemas potenciais, como estresse por falta de luz ou problemas atmosféricos. </Description>
+	</RecordThing>
     <RecordThing>
       <Key>AppliancePlantGeneticStabilizer</Key>
       <Value>Estabilizador Genético de Plantas</Value>
@@ -7244,7 +7303,7 @@ Para iniciar o processo, coloque uma planta ou saco de sementes no slot da esque
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_GasCylinderTankPiece</Key>
-      <Value>Pista de Pouso Cilindro de Gás Pequeno</Value>
+      <Value>Doca de Pouso - Tanque de Gás Pequeno</Value>
       <Description>Aumenta o volume da capacidade de armazenamento de gás da pista de pouso. Este volume é usado para comprar e vender gás com comerciantes.</Description>
     </RecordThing>
     <RecordThing>
@@ -7303,22 +7362,22 @@ Quando conectada a um {THING:StructureComputer} contendo uma placa-mãe {THING:M
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_ThreshholdPiece</Key>
-      <Value>Pista de Pouso Limiar</Value>
+      <Value>Pista de taxiamento da plataforma de pouso - Limiar</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_TaxiPieceHold</Key>
-      <Value>Pista de Táxi de Pouso (Espera)</Value>
+      <Value>Pista de taxiamento da plataforma de pouso - Espera</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_TaxiPieceStraight</Key>
-      <Value>Pista de Táxi de Pouso (Reta)</Value>
+      <Value>Pista de taxiamento da plataforma de pouso - Reta</Value>
       <Description />
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_TaxiPieceCorner</Key>
-      <Value>Pista de Táxi de Pouso (Canto)</Value>
+      <Value>Pista de taxiamento da plataforma de pouso - Canto</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -7333,7 +7392,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma placa-mãe {THING:M
     </RecordThing>
     <RecordThing>
       <Key>ItemKitLandingPadWaypoint</Key>
-      <Value>Kit (Plataforma de Pouso - Pista de Rolagem)</Value>
+      <Value>Kit (Plataforma de Pouso - Pista de taxiamento)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -7439,7 +7498,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma placa-mãe {THING:M
     <RecordThing>
       <Key>ItemSprayGun</Key>
       <Value>Pistola de Pintura</Value>
-      <Description>Use com latas de spray no {SLOT:ItemSprayGun} para pintar estruturas, cabos e tubos. Muito mais eficiente e rápido do que fazer com latas de spray individuais.</Description>
+      <Description>Use com latas de spray no Slot para {SLOT:SprayCan} para pintar estruturas, cabos e tubos. Muito mais eficiente e rápido do que fazer com latas de spray individuais.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureFuselage1x1</Key>
@@ -7458,7 +7517,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma placa-mãe {THING:M
     </RecordThing>
     <RecordThing>
       <Key>StructureBatteryMedium</Key>
-      <Value>Bateria Média</Value>
+      <Value>Bateria Média para Foguete</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -7558,7 +7617,7 @@ Quando conectada a um {THING:StructureComputer} contendo uma placa-mãe {THING:M
     </RecordThing>
     <RecordThing>
       <Key>StructureBatterySmall</Key>
-      <Value>Bateria Auxiliar de Foguete</Value>
+      <Value>Bateria Auxiliar para Foguete</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -7672,7 +7731,7 @@ Em conjunto com a {THING:StructureEvaporationChamber}, os Stationeers podem expl
     </RecordThing>
     <RecordThing>
       <Key>StructureInLineTankLiquid1x2</Key>
-      <Value>Tanque em Linha de Líquido</Value>
+      <Value>Tanque em Linha para Líquido</Value>
       <Description>Um pequeno tanque de expansão que aumenta o volume de uma rede de tubulação.</Description>
     </RecordThing>
     <RecordThing>
@@ -8654,7 +8713,7 @@ O equilíbrio da vazão de ambas as entradas é essencial para criar uma boa tro
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_BlankPiece</Key>
-      <Value>Doca de Pouso</Value>
+      <Value>Pista de Pouso</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -8669,7 +8728,7 @@ O equilíbrio da vazão de ambas as entradas é essencial para criar uma boa tro
     </RecordThing>
     <RecordThing>
       <Key>ApplianceTabletDock</Key>
-      <Value>Doca de Tablet</Value>
+      <Value>Base para Tablet</Value>
       <Description />
     </RecordThing>
     <RecordThing>
@@ -9298,7 +9357,7 @@ Ele possui resfriamento líquido para um desempenho térmico excepcional e ofere
     <RecordThing>
       <Key>CartridgeDeepMiner</Key>
       <Value>Cartucho Minerador Profundo</Value>
-      <Description />
+      <Description>Os cartuchos de escaneamento de Minério Profundo são usados com o tablet portátil para escanear minerais no subsolo. Os tipos de minerais que podem ser extraidos com a Perfuradora Profunda do solo são informados. Este cartucho também exibe o nome da Região e sua localização atual em coordenadas X, Y e Z.</Description>
     </RecordThing>
     <RecordThing>
       <Key>StructureCircuitHousingCompact</Key>
@@ -9332,7 +9391,7 @@ Ele possui resfriamento líquido para um desempenho térmico excepcional e ofere
     </RecordThing>
     <RecordThing>
       <Key>Landingpad_LargeTank</Key>
-      <Value>Doca de Pouso - Tanque Grande</Value>
+      <Value>Doca de Pouso - Tanque Grande de Gás</Value>
       <Description>Aumenta o volume da capacidade de armazenamento de gases da doca de pouso. Esse volume é utilizado para comprar e vender gases com os comerciantes.</Description>
     </RecordThing>
     <RecordThing>
@@ -10160,6 +10219,73 @@ O que o Combustor produz depende inteiramente do que é inserido nele. Veja a p�
       <Value>Painel Solar (1x5)</Value>
       <Description />
     </RecordThing>
+	<RecordThing>
+	  <Key>ItemKitPowerPylon</Key>
+	  <Value>Kit (Poste de Energia)</Value>
+	<Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructurePowerPylon</Key>
+	  <Value>Poste de Energia</Value>
+	<Description>
+	Os postes de energia podem ser usados para transmitir energia e dados a longas distâncias. Embora tecnicamente não sejam cabos, os postes interligam duas redes de cabos, formando uma única rede.
+
+Monte-os a partir do Kit de Postes de Energia e conecte-os com Cabo Super-Pesado, com até 40 metros de comprimento por vão. Um Terminal de Poste de Energia em cada extremidade conecta a linha à rede de cabos da sua base. Um alicate de corte desconecta a conexão e devolve o cabo para você.
+	</Description>
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructurePowerPylonInput</Key>
+	  <Value>Entrada do Poste de Energia</Value>
+	<Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructurePowerPylonOutput</Key>
+	  <Value>Saída do Poste de Energia</Value>
+	<Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>ItemCableGun</Key>
+	  <Value>Instalador de Cabos Elétricos</Value>
+	  <Description>Crie facilmente longos trechos retos de cabos elétricos.
+
+Funciona com {THING:ItemCableCoil}, {THING:ItemCableCoilHeavy} e {THING:ItemCableCoilSuperHeavy}. O Instalador de Cabos utilizará, sempre que possível, os trechos de cabo da variante de cabo longo.
+
+O Instalador de Cabos não pode unir seus cabos aos cabos que já estejam instalados.
+
+Um trecho só pode ter o comprimento permitido pela bobina carregada no instalador; as bobinas no {THING:ItemCableToolBelt} não aumentam esse comprimento. Quando a bobina carregada se esgota, uma bobina compatível do cinto é carregada automaticamente no instalador.</Description>
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH3</Key>
+	  <Value>Cabo Pesado Reto 3 unidades</Value>
+	  <Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH3Burnt</Key>
+	  <Value>Cabo Pesado Queimado Reto 3 unidades</Value>
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH5</Key>
+	  <Value>Cabo Pesado Reto 5 unidades</Value>
+	  <Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH5Burnt</Key>
+	  <Value>Cabo Pesado Queimado Reto 5 unidades</Value>
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH10</Key>
+	  <Value>Cabo Pesado Reto 10 unidades</Value>
+	  <Description />
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructureCableStraightH10Burnt</Key>
+	  <Value>Cabo Pesado Queimado Reto 10 unidades</Value>
+	</RecordThing>
+	<RecordThing>
+	  <Key>StructurePowerPylonTerminus</Key>
+	  <Value>Terminal do Poste de Energia</Value>
+	  <Description />
+	</RecordThing>
   </Things>
   <Slots>
     <Record>
@@ -10227,7 +10353,11 @@ O que o Combustor produz depende inteiramente do que é inserido nele. Veja a p�
       <Value>Bateria</Value>
 	</Record>
     <Record>
-      <Key>Egg</Key>
+	  <Key>CableAmmo</Key>
+	  <Value>Carga de Cabo</Value>
+	</Record>
+    <Record>
+	<Key>Egg</Key>
       <Value>Ovo</Value>
     </Record>
     <Record>
@@ -10754,7 +10884,7 @@ O que o Combustor produz depende inteiramente do que é inserido nele. Veja a p�
     </Record>
     <Record>
       <Key>Flush</Key>
-      <Value>Descarga</Value>
+      <Value>Purgar o Ar</Value>
     </Record>
     <Record>
       <Key>Battery</Key>
@@ -22253,7 +22383,11 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
       <Key>SpawnDataVolatilesCanister</Key>
       <Value>Cilindro de Voláteis</Value>
     </Record>
-    <Record>
+	<Record>
+	  <Key>SpawnDataMethaneCanister</Key>
+	  <Value>Cilindro de Metano</Value>
+	</Record>
+	<Record>
       <Key>SpawnDataHydroponicsSupplies</Key>
       <Value>Suprimentos de Hidroponia</Value>
     </Record>
@@ -22787,7 +22921,7 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
     </Record>
     <Record>
       <Key>SellDataBulkHydrazine</Key>
-      <Value>Hidrazina a Grane</Value>
+      <Value>Hidrazina a Granel</Value>
     </Record>
     <Record>
       <Key>SellDataSteam</Key>
@@ -22801,7 +22935,7 @@ Um {THING:StructureWaterPurifier} pode ser usado para convertê-la de volta em {
       <Key>SellDataHydrazineCanister</Key>
       <Value>Cilindro de Hidrazina</Value>
     </Record>
-    <Record>		
+    <Record>
       <Key>SellDataFuelCanister</Key>
       <Value>Cilindro de Combustível</Value>
     </Record>
@@ -24898,7 +25032,7 @@ Agradecemos sua compreensão e mal podemos esperar para que você experimente as
 	</Record>
 	<Record>
 	  <Key>Nitrice</Key>
-	  <Value>Nitrita</Value>
+	  <Value>Nitrice</Value>
 	</Record>
 	<Record>
 	  <Key>Volatiles</Key>
@@ -24964,7 +25098,7 @@ Agradecemos sua compreensão e mal podemos esperar para que você experimente as
     </Record>
     <Record>
       <Key>SuitContextAirConState</Key>
-      <Value>A/C {LOCAL:IsTurnedOn}</Value>
+      <Value>Ar Condicionado {LOCAL:IsTurnedOn}</Value>
     </Record>
     <Record>
       <Key>SuitContextAirPumpState</Key>
@@ -25269,7 +25403,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>AddSeedsToSlot</Key>
-      <Value>Isso adicionará uma {0} ao recipiente</Value>
+      <Value>Isso adicionará {0} ao recipiente</Value>
     </Record>
     <Record>
       <Key>ClearFertiliser</Key>
@@ -26181,91 +26315,91 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>PlantNotGrowingMature</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;não está crescendo&lt;/color&gt; e nunca produzirá frutos</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;não está crescendo&lt;/color&gt; e nunca produzirá frutos</Value>
     </Record>
     <Record>
       <Key>PlantBarelyGrowingMature</Key>
-      <Value>A {LOCAL:Plant} está crescendo muito pouco em direção à frutificação</Value>
+      <Value>{LOCAL:Plant} está crescendo muito pouco em direção à frutificação</Value>
     </Record>
     <Record>
       <Key>PlantGrowingPoorlyMature</Key>
-      <Value>A {LOCAL:Plant} está crescendo mal em direção à frutificação</Value>
+      <Value>{LOCAL:Plant} está crescendo mal em direção à frutificação</Value>
     </Record>
     <Record>
       <Key>PlantGrowingModeratelyMature</Key>
-      <Value>A {LOCAL:Plant} está crescendo moderadamente bem em direção à frutificação</Value>
+      <Value>{LOCAL:Plant} está crescendo moderadamente bem em direção à frutificação</Value>
     </Record>
     <Record>
       <Key>PlantThrivingMature</Key>
-      <Value>A {LOCAL:Plant} está prosperando em direção à frutificação</Value>
+      <Value>{LOCAL:Plant} está prosperando em direção à frutificação</Value>
     </Record>
     <Record>
       <Key>PlantNotGrowingSeed</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;não está crescendo&lt;/color&gt; e nunca produzirá sementes</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;não está crescendo&lt;/color&gt; e nunca produzirá sementes</Value>
     </Record>
     <Record>
       <Key>PlantBarelyGrowingSeed</Key>
-      <Value>A {LOCAL:Plant} está crescendo muito pouco em direção à produção de sementes</Value>
+      <Value>{LOCAL:Plant} está crescendo muito pouco em direção à produção de sementes</Value>
     </Record>
     <Record>
       <Key>PlantGrowingPoorlySeed</Key>
-      <Value>A {LOCAL:Plant} está crescendo mal em direção à produção de sementes</Value>
+      <Value>{LOCAL:Plant} está crescendo mal em direção à produção de sementes</Value>
     </Record>
     <Record>
       <Key>PlantGrowingModeratelySeed</Key>
-      <Value>A {LOCAL:Plant} está crescendo moderadamente bem em direção à produção de sementes</Value>
+      <Value>{LOCAL:Plant} está crescendo moderadamente bem em direção à produção de sementes</Value>
     </Record>
     <Record>
       <Key>PlantThrivingSeed</Key>
-      <Value>A {LOCAL:Plant} está prosperando em direção à produção de sementes</Value>
+      <Value>{LOCAL:Plant} está prosperando em direção à produção de sementes</Value>
     </Record>
     <Record>
       <Key>PlantNotEnoughLight</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;não está recebendo a quantidade correta de luz por dia&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;não está recebendo a quantidade correta de luz por dia&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantAtmosphereTooHot</Key>
-      <Value>A atmosfera da {LOCAL:Plant} &lt;color=red&gt;está muito quente&lt;/color&gt;</Value>
+      <Value>A atmosfera para {LOCAL:Plant} &lt;color=red&gt;está muito quente&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantAtmosphereTooCold</Key>
-      <Value>A atmosfera da {LOCAL:Plant} &lt;color=red&gt;está muito fria&lt;/color&gt;</Value>
+      <Value>A atmosfera para {LOCAL:Plant} &lt;color=red&gt;está muito fria&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantWaterTooHot</Key>
-      <Value>A água da {LOCAL:Plant} &lt;color=red&gt;está muito quente&lt;/color&gt;</Value>
+      <Value>A água para {LOCAL:Plant} &lt;color=red&gt;está muito quente&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantWaterTooCold</Key>
-      <Value>A água da {LOCAL:Plant} &lt;color=red&gt;está muito fria&lt;/color&gt;</Value>
+      <Value>A água para {LOCAL:Plant} &lt;color=red&gt;está muito fria&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantWaterNeeds</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;precisa de água&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;precisa de água&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantNotCorrectAtmosphere</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;não possui a composição correta de gases na atmosfera&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;não possui a composição correta de gases na atmosfera&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantIsPollutedByAir</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;está sendo poluída pelo ar&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;está sendo poluída pelo ar&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantIsReceivingLight</Key>
-      <Value>A {LOCAL:Plant} está recebendo luz</Value>
+      <Value>{LOCAL:Plant} está recebendo luz</Value>
     </Record>
     <Record>
       <Key>PlantIsInDarkness</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;está na escuridão&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;está na escuridão&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantIsInLowPressureEnvironment</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;está em um ambiente de baixa pressão&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;está em um ambiente de baixa pressão&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantIsInHighPressureEnvironment</Key>
-      <Value>A {LOCAL:Plant} &lt;color=red&gt;está em um ambiente de alta pressão&lt;/color&gt;</Value>
+      <Value>{LOCAL:Plant} &lt;color=red&gt;está em um ambiente de alta pressão&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>PlantCreate</Key>
@@ -26757,7 +26891,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>ItemInSlotValue</Key>
-      <Value>O {LOCAL:Thing} está em &lt;color=yellow&gt;{LOCAL:Value}&lt;/color&gt;</Value>
+      <Value>{LOCAL:Thing} está em &lt;color=yellow&gt;{LOCAL:Value}&lt;/color&gt;</Value>
     </Record>
     <Record>
       <Key>DoorIsWelded</Key>
@@ -27673,7 +27807,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>CantPaintSameColour</Key>
-      <Value>O(A) {LOCAL:Thing} já está pintado(a) com a cor {LOCAL:Color}</Value>
+      <Value>{LOCAL:Thing} já está pintado(a) com a cor {LOCAL:Color}</Value>
     </Record>
     <Record>
       <Key>AtmosphereVolume</Key>
@@ -27725,7 +27859,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>ThingIsState</Key>
-      <Value>O(A) {LOCAL:Thing} está {LOCAL:State}</Value>
+      <Value>{LOCAL:Thing} está {LOCAL:State}</Value>
     </Record>
     <Record>
       <Key>LaunchTowerAlreadyExists</Key>
@@ -27837,7 +27971,7 @@ Status: {LOCAL:StatusValue}</Value>
     </Record>
     <Record>
       <Key>TradeItemContains</Key>
-      <Value>O(A) {LOCAL:OrePrefab} contém o seguinte</Value>
+      <Value>{LOCAL:OrePrefab} contém o seguinte</Value>
     </Record>
     <Record>
       <Key>TradeRatio</Key>
