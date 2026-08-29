@@ -2,7 +2,7 @@
   <Name>Português (Brasil)</Name>
   <Code>PB</Code>
   <HelpPage>
-  <!--Tradução Marcelo 02/07/2026 Registro de alterações v0.2.6403.27689-->  
+  <!--Tradução Marcelo 28/08/2026 Registro de alterações v0.2.6428.27798-->  
 <!--
     ~~~~~~~~~~~~~~~~~~~~~~~~~
     |                 MASTER PAGES            |
@@ -128,14 +128,17 @@
       <Key>TradingPage</Key>
 	  <DisplayFilter>Guides</DisplayFilter>
       <Title>Comércio</Title>
-      <Text>O comércio é uma parte essencial da vida de um {LINK:Stationeers;Stationeer}, especialmente em mundos mais extremos, onde novos cadetes podem ter dificuldades iniciais para sobreviver sem assistência.
+      <Text>O comércio é uma parte essencial da vida de um {LINK:Stationeers;Stationeer}, especialmente em mundos mais extremos, onde novos cadetes podem ter dificuldades para sobreviver sem assistência.
 
-Existem três níveis diferentes de contatos. Esses contatos variam em dificuldade para serem localizados e permanecem disponíveis por cerca de 20 minutos antes de partirem e serem substituídos por outros. Portanto, será necessário encontrar os contatos mais difíceis se quiser negociar com vários comerciantes.
+Existem três níveis de contatos comerciais. Quanto maior o nível, mais difícil será localizar e estabelecer contato com o comerciante. Cada contato permanece disponível por cerca de 20 minutos antes de partir e ser substituído por outro. Portanto, será necessário localizar contatos mais difíceis para negociar com vários comerciantes.
 
-Os contatos precisam ser **resolvidos** pela antena parabólica antes que ela possa determinar o quão precisamente está apontada para o alvo. O tempo de resolução é determinado pela potência de saída da antena multiplicada pelo alinhamento da antena, dividido pela potência esperada de resolução do contato. Se o contato estiver sendo resolvido muito lentamente, isso provavelmente indica que o alinhamento está incorreto — tente um ângulo bem diferente. Alternativamente, o contato pode exigir uma potência muito alta, e sua antena atual pode não ser grande o suficiente para resolvê-lo em tempo hábil. O processo de resolução consome apenas 10% da potência total configurada na antena.
+1. Localizando um contato
+Primeiro, a antena parabólica precisa **resolver** o contato. Esse processo permite determinar com precisão a direção em que a antena deve ser apontada. O tempo necessário para resolver um contato depende da potência fornecida à antena, do alinhamento da antena com o contato e da potência necessária para a resolução. Se o contato estiver sendo resolvido muito lentamente, verifique o alinhamento da antena e tente apontá-la para um ângulo diferente. Contatos mais difíceis também podem exigir muita potência e uma antena maior para serem resolvidos rapidamente. O processo de resolução consome apenas 10% da potência configurada na antena.
 
-Depois de resolver a posição do contato, será possível pressionar o botão de **interrogação**. Assim como na resolução, você precisará direcionar potência suficiente ao contato. A janela de interrogação exibirá os cálculos atuais. A interrogação possui um limite mínimo: se a antena não estiver bem apontada ou a potência for muito baixa, o processo não poderá ser iniciado. Além disso, o tempo de interrogação varia — contatos mais difíceis levam muito mais tempo, portanto, usar potências elevadas garante que você conclua o processo antes que o comerciante parta. Quando a interrogação for concluída, você poderá pousar o comerciante como de costume.
+2. Interrogando o contato
+Depois que a posição do contato for resolvida, o botão **Interrogar** ficará disponível. A antena ainda precisará estar corretamente apontada e fornecer potência suficiente para iniciar o processo. A janela de interrogação mostra os cálculos atuais e permite verificar se as condições são suficientes. A potência utilizada também influencia o tempo necessário para concluir a interrogação. Contatos mais difíceis demoram mais para serem interrogados, portanto, utilizar uma potência maior pode ser necessário para concluir o processo antes que o comerciante parta.
 
+Quando a interrogação for concluída, o comerciante poderá ser contatado e pousado normalmente.
 {LIST_OF_TRADING_DEVICES}
       </Text>
 	</StationpediaPage>
@@ -698,7 +701,13 @@ A água pode ser obtida de várias formas. Pelo menos uma {THING:ItemWaterBottle
 A taxa de sede pode ser ajustada no menu principal de configurações, alterando o controle deslizante de Taxa de Fome/Hidratação.
 	  </Text>
     </StationpediaPage>
-
+	<StationpediaPage>
+	  <Key>SanitationPage</Key>
+	  <Title>Higiene</Title>
+	  <DisplayFilter>Guides</DisplayFilter>
+	  <Text>Com o tempo, satisfazer a {LINK:HydrationPage;sede} e a {LINK:HungerPage;fome} dos Stationeers fará com que eles precisem fazer suas necessidades. A {LINK:ODA;ODA} recomenda que os Stationeers instalem um {THING:StructureToiletModern} em sua base após o pouso, que requer uma atmosfera e {GAS:Water} para funcionar. Isso produzirá {GAS:PollutedWater}, que pode ser reciclada usando um {THING:StructureWaterPurifier} e então utilizada para outras finalidades, como a {LINK:FarmingPage;agricultura} ou a {LINK:HydrationPage;hidratação}. O {THING:ItemWasteBagEmpty} pode ser usado como uma alternativa portátil ao vaso sanitário, mas seu conteúdo não pode ser recuperado.
+{LIST_OF_SANITATION}</Text>
+	</StationpediaPage>
     <StationpediaPage>
       <Key>EVAPage</Key>
       <Title>Trajes EVA</Title>
