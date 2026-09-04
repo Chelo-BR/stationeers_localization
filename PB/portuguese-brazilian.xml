@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Português (Brasil)</Name>
-  <Code>PB</Code>  <!--Tradução Marcelo 28/08/2026 Registro de alterações v0.2.6420.27780-->
+  <Code>PB</Code>  <!--Tradução Marcelo 03/09/2026 Registro de alterações v0.2.6420.27780-->
   <Reagents>
     <RecordReagent>
       <Key>Flour</Key>
@@ -7111,7 +7111,7 @@ Altamente sensível à temperatura, o nitrice começa a derreter assim que é mi
     </RecordThing>
     <RecordThing>
       <Key>StructureDeepMiner</Key>
-      <Value>Perfuradora Profunda</Value>
+      <Value>Mineradora Profunda</Value>
       <Description>Perfura o terreno até atingir o leito rochoso. Uma vez dentro do leito rochoso, {THING:ItemDirtyOre} é produzido aproximadamente a cada 90 segundos</Description>
     </RecordThing>
     <RecordThing>
@@ -7151,7 +7151,7 @@ Desligar a máquina reduzirá a rotação de forma controlada.
     </RecordThing>
     <RecordThing>
       <Key>ItemKitDeepMiner</Key>
-      <Value>Kit (Perfuradora Profunda)</Value>
+      <Value>Kit (Mineradora Profunda)</Value>
       <Description />
     </RecordThing>
     <RecordThing>
